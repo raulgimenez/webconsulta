@@ -68,10 +68,10 @@ export default function Professionals() {
                 className="w-full"
             />
             </div>
-            <h1 className="font-AllisonScript text-9xl mt-[-50px] pl-10 ml-10">Professionals</h1>
+            <h1 className="font-AllisonScript text-6xl sm:text-7xl md:text-8xl lg:text-9xl mt-[-25px] sm:mt-[-30px] md:mt-[-40px] lg:mt-[-50px] pl-10 ml-5 md:ml-10">Professionals</h1>
             {/* <Profile /> */}
             <div className="mt-10 p-12 sm:p-20 font-GowunDodum">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8">
                     {/* Aquí puedes añadir tarjetas o información sobre los profesionales */}
                     <div className="bg-stone-200 p-6 rounded-lg shadow-sm">
                         <div className="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style={{backgroundImage: "url('/images/psico1.jpg')"}}></div>
@@ -100,9 +100,9 @@ export default function Professionals() {
                       priority
                       className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                     />
-                  <div class="flex flex-col justify-between p-4 leading-normal">
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Caoutar Zarhouni</h5>
-                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                  <div className="flex flex-col justify-between p-4 leading-normal">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Caoutar Zarhouni</h5>
+                      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                   </div>
               </div>
             </div>
