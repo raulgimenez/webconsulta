@@ -35,6 +35,12 @@ export default function Professionals() {
           </h1>
 
           <nav className="mt-6 flex justify-center space-x-6 text-gray-900">
+            <Link
+              href="/atencio"
+              className="border-b-2 border-transparent hover:border-black pb-1 transition-colors"
+            >
+              Atenció
+            </Link>
             <Link href="/" className="border-b-2 border-transparent hover:border-black pb-1 transition-colors">
               Espai
             </Link>
@@ -43,12 +49,6 @@ export default function Professionals() {
               className="border-b-2 border-black pb-1"
             >
               Professionals
-            </Link>
-            <Link
-              href="#"
-              className="border-b-2 border-transparent hover:border-black pb-1 transition-colors"
-            >
-              Atenció
             </Link>
             <Link
               href="#"

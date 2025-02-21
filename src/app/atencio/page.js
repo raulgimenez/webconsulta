@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Professionals() {
   return (
     <div className="min-h-screen flex flex-col items-center p-4 sm:p-8 bg-white font-GowunDodum">
       <header className="w-full max-w-3xl mb-8">
@@ -36,11 +36,11 @@ export default function Home() {
           <nav className="mt-6 flex justify-center space-x-6 text-gray-900">
             <Link
               href="/atencio"
-              className="border-b-2 border-transparent hover:border-black pb-1 transition-colors"
+              className="border-b-2 border-black pb-1"
             >
               Atenció
             </Link>
-            <Link href="#" className="border-b-2 border-black pb-1">
+            <Link href="/" className="border-b-2 border-transparent hover:border-black pb-1 transition-colors">
               Espai
             </Link>
             <Link
@@ -58,20 +58,22 @@ export default function Home() {
           </nav>
         </header>
         <main className="pb-20">
-          <div className="mt-10">
+            <div className="mt-10">
             <Image
-              src="/bg-1.png"
-              alt="Modern home interior"
-              width={1024}
-              height={100}
-              className="w-full"
+                src="/bg-1.png"
+                alt="Modern home interior"
+                width={1024}
+                height={100}
+                className="w-full"
             />
-          </div>
-          <h1 className="font-AllisonScript text-9xl mt-[-50px] pl-10 ml-10">l'espai</h1>
-          <div className="mt-6 p-12 sm:p-20 font-GowunDodum">
-          Aquest és un lloc creat per a l'acompanyament, l'escolta i el creixement personal. Creiem en la importància d'oferir un ambient segur i acollidor, on cada persona pugui explorar les seves emocions i desafiaments amb confiança i respecte.
-          </div>
+            </div>
+            <h1 className="font-AllisonScript text-6xl sm:text-7xl md:text-8xl lg:text-9xl mt-[-25px] sm:mt-[-30px] md:mt-[-40px] lg:mt-[-50px] pl-10 ml-5 md:ml-10">Atenció</h1>
+            <div className="mt-6 p-12 sm:p-20 font-GowunDodum">
+              Aquest és un lloc creat per a l'acompanyament, l'escolta i el creixement personal. Creiem en la importància d'oferir un ambient segur i acollidor, on cada persona pugui explorar les seves emocions i desafiaments amb confiança i respecte.
+            </div>
         </main>
+    
+
       </div>
       <footer className="max-w-7xl w-full mt-8 text-gray-600">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -88,5 +90,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
