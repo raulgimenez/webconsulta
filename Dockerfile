@@ -18,4 +18,4 @@ RUN yarn build
 EXPOSE 3000
 
 # Comando para ejecutar la aplicación en producción
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
