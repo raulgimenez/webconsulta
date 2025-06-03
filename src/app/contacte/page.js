@@ -65,16 +65,16 @@ export default function ContactPage() {
 
         {/* Mapa */}
         <div className="mt-12 rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.1234567890123!2d2.2875!3d41.6083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDM2JzI5LjkiTiAywrAxNycxNS4wIkU!5e0!3m2!1ses!2ses!4v1234567890"
-            width="100%"
-            height="400"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full"
-          ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.690760095178!2d2.28552947644843!3d41.60772648229847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7e5c1db8fa9%3A0xb27494d36f2a6b3b!2sTeos%20Espai%20de%20Psicologia%20i%20Mindfulness!5e1!3m2!1ses!2ses!4v1748961596118!5m2!1ses!2ses"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full"
+        />
         </div>
       </div>
     </main>
