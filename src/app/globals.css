@@ -3,6 +3,97 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Maichigan';
+  src: url('/fonts/Maichigan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SweetJosephine';
+  src: url('/fonts/SweetJosephine.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lagasignatica';
+  src: url('/fonts/Lagasignatica.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roasted-Bailey';
+  src: url('/fonts/Roasted-Bailey.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gabriela-Couture';
+  src: url('/fonts/Gabriela-Couture.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lemontine';
+  src: url('/fonts/Lemontine.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArcadiaScript';
+  src: url('/fonts/ArcadiaScript.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CristalElegance';
+  src: url('/fonts/CristalElegance.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qerginas-Frenchstyle-Serif';
+  src: url('/fonts/Qerginas-Frenchstyle-Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qerginas-Frenchstyle-Script';
+  src: url('/fonts/Qerginas-Frenchstyle-Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aureliya-Homnalej';
+  src: url('/fonts/Aureliya-Homnalej.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sallita';
+  src: url('/fonts/Sallita.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PhotoWallSansShadow';
+  src: url('/fonts/PhotoWallSansShadow-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'GowunDodum';
   src: url('/fonts/GowunDodum-Regular.ttf') format('ttf');
   font-weight: normal;
