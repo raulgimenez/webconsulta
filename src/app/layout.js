@@ -18,9 +18,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
   return (
     <html lang="ca">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Lagasignatica.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-GowunDodum`}
       >
