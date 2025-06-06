@@ -30,11 +30,27 @@ export default function RootLayout({ children }) {
           type="font/otf"
           crossOrigin="anonymous"
         />
-         <Script
+         {/* <Script
           src="https://beamanalytics.b-cdn.net/beam.min.js"
           data-token="7e46edd0-370f-41bb-988d-97fcfc1e48c5"
           strategy="afterInteractive"
+        /> */}
+        {/* Script principal de Plausible con tagged events y props */}
+        <Script
+          defer
+          data-domain="remerubio.com"
+          src="https://plausible.kharaksystem.com/js/script.pageview-props.tagged-events.js"
+          strategy="afterInteractive"
         />
+
+        {/* Script inline para definir window.plausible */}
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`
+            window.plausible = window.plausible || function() {
+              (window.plausible.q = window.plausible.q || []).push(arguments)
+            }
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-GowunDodum`}
