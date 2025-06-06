@@ -15,4 +15,4 @@ Disallow: /?*
 Allow: /
 
 # Sitemap
-Sitemap: https://remerubio.com/sitemap.xml
+Sitemap: https://www.remerubio.com/sitemap.xml

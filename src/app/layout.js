@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavMenu from "@/components/NavMenu";
 
+import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +29,11 @@ export default function RootLayout({ children }) {
           as="font"
           type="font/otf"
           crossOrigin="anonymous"
+        />
+         <Script
+          src="https://beamanalytics.b-cdn.net/beam.min.js"
+          data-token="7e46edd0-370f-41bb-988d-97fcfc1e48c5"
+          strategy="afterInteractive"
         />
       </head>
       <body

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://remerubio.com/</loc>
+    <loc>https://www.remerubio.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://remerubio.com/serveis</loc>
+    <loc>https://www.remerubio.com/serveis</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://remerubio.com/profile</loc>
+    <loc>https://www.remerubio.com/profile</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://remerubio.com/contacte</loc>
+    <loc>https://www.remerubio.com/contacte</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
