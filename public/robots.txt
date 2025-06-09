@@ -2,6 +2,7 @@
 # Última actualización: 3 de junio de 2025
 
 User-agent: *
+Disallow: /cdn-cgi/
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/

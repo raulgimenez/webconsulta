@@ -30,11 +30,13 @@ export default function RootLayout({ children }) {
           type="font/otf"
           crossOrigin="anonymous"
         />
-         {/* <Script
-          src="https://beamanalytics.b-cdn.net/beam.min.js"
-          data-token="7e46edd0-370f-41bb-988d-97fcfc1e48c5"
-          strategy="afterInteractive"
-        /> */}
+        <link
+          rel="preload"
+          href="/fonts/GowunDodum-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
         {/* Script principal de Plausible con tagged events y props */}
         <Script
           defer
