@@ -3,7 +3,7 @@ import "./globals.css";
 import NavMenu from "@/components/NavMenu";
 
 import Script from "next/script";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,10 +20,12 @@ export const metadata = {
   description: "Psicología per tot el cicle vital",
 };
 
-const baseUrl = 'https://www.remerubio.com';
-const canonicalUrl = `${baseUrl}${router.asPath.split('?')[0]}`; // sin parámetros
-
 export default function RootLayout({ children }) {
+  
+  const router = useRouter()
+  const baseUrl = 'https://www.remerubio.com';
+  const canonicalUrl = `${baseUrl}${router.asPath.split('?')[0]}`; // sin parámetros
+  
   return (
     <html lang="ca">
       <head>
