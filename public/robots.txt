@@ -7,12 +7,15 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
 Disallow: /tmp/
+Disallow: /_next/
+Disallow: /fonts/
 Disallow: /cgi-bin/
 Disallow: /404
 Disallow: /500
 Disallow: /error
 Disallow: /search
 Disallow: /?*
+Disallow: /favicon.ico
 Allow: /
 
 # Sitemap
