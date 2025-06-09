@@ -3,6 +3,7 @@ import "./globals.css";
 import NavMenu from "@/components/NavMenu";
 
 import Script from "next/script";
+import { useRouter } from 'next/router';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +19,9 @@ export const metadata = {
   title: "Reme Rubio",
   description: "Psicología per tot el cicle vital",
 };
+
+const baseUrl = 'https://www.remerubio.com';
+const canonicalUrl = `${baseUrl}${router.asPath.split('?')[0]}`; // sin parámetros
 
 export default function RootLayout({ children }) {
   return (
@@ -53,6 +57,7 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
+        <link rel="canonical" href={canonicalUrl} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-GowunDodum`}
