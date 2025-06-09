@@ -1,7 +1,31 @@
 import Image from "next/image";
-import Link from "next/link";
-
 import { MinimalistServicesList } from "@/components/ServiceList";
+
+export const metadata = {
+  title: 'Serveis terapèutics',
+  description:
+    'Consulta els serveis terapèutics oferts per Reme Rubio: teràpia sistèmica per a famílies, infants, adolescents i adults.',
+  alternates: {
+    canonical: 'https://www.remerubio.com/serveis',
+  },
+  openGraph: {
+    title: 'Serveis terapèutics | Reme Rubio',
+    description:
+      'Descobreix els serveis de suport psicològic que ofereix Reme Rubio a Granollers: acompanyament emocional, familiar i personal.',
+    url: 'https://www.remerubio.com/serveis',
+    siteName: 'Reme Rubio',
+    type: 'website',
+    locale: 'ca_ES',
+    images: [
+      {
+        url: '/images/sala_2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Espai de teràpia a Granollers',
+      },
+    ],
+  },
+};
 
 export default function Serveis() {
 

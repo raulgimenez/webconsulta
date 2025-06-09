@@ -1,5 +1,32 @@
 import Image from "next/image";
 
+
+export const metadata = {
+  title: 'Trajectòria professional',
+  description:
+    "Descobreix el recorregut formatiu i professional de Reme Rubio com a psicoterapeuta sistèmica, docent i investigadora.",
+  alternates: {
+    canonical: 'https://www.remerubio.com/profile',
+  },
+  openGraph: {
+    title: 'Trajectòria professional | Reme Rubio',
+    description:
+      "Explora l'experiència acadèmica i clínica de Reme Rubio en l'àmbit de la psicoteràpia sistèmica i la docència universitària.",
+    url: 'https://www.remerubio.com/profile',
+    siteName: 'Reme Rubio',
+    type: 'profile',
+    locale: 'ca_ES',
+    images: [
+      {
+        url: '/images/og-trajectoria.png',
+        width: 1200,
+        height: 630,
+        alt: 'Trajectòria professional de Reme Rubio',
+      },
+    ],
+  },
+};
+
 export default function ProfessionalsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -33,8 +60,8 @@ export default function ProfessionalsPage() {
             </h3>
             <ul className="space-y-3 text-gray-600">
               <li>Llicenciada en Psicologia (UAB 2007)</li>
-              <li>Habilitació sanitària (COPC 2014)</li>
               <li>Màster Interuniversitari en Psicologia de l'Educació (UB 2009)</li>
+              <li>Habilitació sanitària (COPC 2014)</li>
               <li>Doctorat en Psicologia de l'Educació (UAB 2015)</li>
               <li>Màster en "Psicoterapia con niños y adolescentes en los ámbitos clínico y educativo" (ECPNA i IL3-UB 2023)</li>
               <li>Máster en "Clínica Psicoanalítica con niños y adolescentes - Acreditación FEAP", (ECPNA 2025)</li>
@@ -47,7 +74,8 @@ export default function ProfessionalsPage() {
               Experiència Professional
             </h3>
             <ul className="space-y-3 text-gray-600">
-              <li>Psicoterapeuta</li>
+              <li>Psicoterapeuta privada</li>
+              <li>Psicoterapeuta a CAF (Intress)</li>
               <li>Tècnica psicòloga al Servei d'Adopcions Internacions (Intress)</li>
               <li>Directora centre d'acollida d'infants i adolescents (Intress 2017-2025)</li>
               <li>Tècnica psicòloga i coordinadora del Servei Tècnic Punt de Trobada Ciutat 2 BCN (Intress 2012-2017)</li>

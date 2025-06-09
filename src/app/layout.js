@@ -3,7 +3,6 @@ import "./globals.css";
 import NavMenu from "@/components/NavMenu";
 
 import Script from "next/script";
-import { useRouter } from 'next/navigation'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,14 +16,31 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Reme Rubio",
-  description: "Psicología per tot el cicle vital",
+  description: "Psicologia per tot el cicle vital des de la mirada sistèmica i psicoanalítica",
+  alternates: {
+    canonical: 'https://www.remerubio.com/',
+  },
+  keywords: ["psicologia", "psicoterapia", "Reme Rubio", "consulta online", "consulta presencial", "Granollers", "Barcelona", "Valles oriental", "Valles Occidental", "psicologia online", "psicologia presencial"],
+  openGraph: {
+    title: "Reme Rubio",
+    description: "",
+    url: 'https://www.remerubio.com/',
+    siteName: 'Reme Rubio',
+    images: [
+      {
+        url: 'https://www.remerubio.com/sala_1.png',
+        width: 1200,
+        height: 630,
+        alt: 'Reme Rubio Psicologia',
+      },
+    ],
+    locale: 'ca_ES',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
   
-  const router = useRouter()
-  const baseUrl = 'https://www.remerubio.com';
-  const canonicalUrl = `${baseUrl}${router.asPath.split('?')[0]}`; // sin parámetros
   
   return (
     <html lang="ca">
@@ -59,7 +75,6 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
-        <link rel="canonical" href={canonicalUrl} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-GowunDodum`}

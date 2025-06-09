@@ -1,5 +1,27 @@
 import { EnvelopeIcon, PhoneIcon, MapPinIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline';
 
+export const metadata = {
+  title: "Contacte",
+  keywords: ["psicologia", "psicoterapia", "Reme Rubio", "consulta online", "consulta presencial", "Granollers", "Barcelona", "Valles oriental", "Valles Occidental", "psicologia online", "psicologia presencial"],
+  openGraph: {
+    title: "Reme Rubio | Contacte",
+    description: "Contacta amb Reme Rubio per a sessions de psicologia online o presencials a Granollers.",
+    url: 'https://www.remerubio.com/contacte',
+    images: [
+      {
+        url: '/images/og-contacte.png',
+        width: 1200,
+        height: 630,
+        alt: 'Reme Rubio Psicologia Contacte',
+      },
+    ],
+  },
+  description: "Contacta per a sessions de psicologia online o presencials a Granollers.",
+  alternates: {
+    canonical: 'https://www.remerubio.com/contacte',
+  }
+};
+
 export default function ContactPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
