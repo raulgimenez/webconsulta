@@ -30,14 +30,29 @@ jobs:
     environment: prd  # Usa el environment 'prd' para protección adicional
     
     steps:
+      - name: 👤 Comprobar usuario efectivo
+        run: |
+          whoami
+          id
+          sudo -u deploy -H bash -lc 'echo "Dentro de sudo -> $(whoami)"; id'
+
       - name: 🚀 Despliegue local
         run: |
-          export PROJECT_DIR=${{ vars.PROJECT_DIR }}
-          git config --global --add safe.directory "$PROJECT_DIR"
-          cd "$PROJECT_DIR"
-          export GIT_SSH_COMMAND='ssh -i /home/deploy/.ssh/id_ed25519 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/home/deploy/.ssh/known_hosts'
-          echo `whoami`
-          echo `pwd`
-          git fetch --all && git reset --hard origin/main
-          chmod +x cicd/deploy.sh
-          bash cicd/deploy.sh
+          sudo -u deploy -H bash -lc '
+            export HOME=/home/deploy
+            export PROJECT_DIR=${{ vars.PROJECT_DIR }}
+            # fuerza la clave y known_hosts para git (si usas GitHub por SSH)
+            export GIT_SSH_COMMAND="ssh -i /home/deploy/.ssh/id_ed25519 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/home/deploy/.ssh/known_hosts"
+
+            # por si Git se queja de ownership “dubious”
+            git config --global --add safe.directory "$PROJECT_DIR"
+
+            cd "$PROJECT_DIR"
+            echo "[DEPLOY] git fetch/reset..."
+            git fetch --all --prune
+            git reset --hard origin/main
+
+            echo "[DEPLOY] ejecutar script"
+            chmod +x cicd/deploy.sh
+            bash cicd/deploy.sh
+          '
