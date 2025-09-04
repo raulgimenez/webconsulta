@@ -1,0 +1,68 @@
+# =============================================================================
+# Pipeline de despliegue automático con GitHub Actions
+# =============================================================================
+# Esta pipeline se ejecuta automáticamente cuando se hace push a la rama main
+# y despliega la aplicación en el servidor de producción usando SSH.
+#
+# Secrets requeridos en GitHub:
+# - SSH_PRIVATE_KEY: Clave privada SSH para conectar al servidor
+# - DEPLOY_USER: Usuario SSH del servidor
+# - DEPLOY_HOST: Dirección IP o hostname del servidor
+# =============================================================================
+
+name: 🚀 Deploy to Production Server
+
+on:
+  # push:
+  #   branches: [ "main" ]
+  # Opcional: descomenta para permitir despliegue manual
+  workflow_dispatch:
+
+# Configuración de concurrencia para evitar despliegues simultáneos
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: 🏗️ Deploy Application
+    runs-on: self-hosted
+    environment: prd  # Usa el environment 'prd' para protección adicional
+    
+    steps:
+      - name: 🔧 Configurar SSH
+        run: |
+          echo "Configurando conexión SSH..."
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          
+          # Añadir el host a known_hosts para evitar prompts interactivos
+          ssh-keyscan -t rsa,ed25519 "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+          
+          echo "✅ Configuración SSH completada"
+
+      - name: 🚀 Ejecutar despliegue remoto
+        run: |
+          echo "Iniciando despliegue en el servidor..."
+          echo "Servidor: ${{ secrets.DEPLOY_HOST }}"
+          echo "Usuario: ${{ secrets.DEPLOY_USER }}"
+          
+          # Ejecutar el script de despliegue en el servidor
+          # Nota: Removido 'sudo' ya que el script maneja permisos internamente
+          ssh -o StrictHostKeyChecking=yes \
+              -o UserKnownHostsFile=~/.ssh/known_hosts \
+              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+              'export PROJECT_DIR=/opt/remerubio; bash /opt/remerubio/cicd/deploy.sh'
+          
+          echo "✅ Despliegue completado exitosamente"
+
+      - name: 📊 Verificar estado del despliegue
+        run: |
+          echo "Verificando estado de los contenedores..."
+          ssh -o StrictHostKeyChecking=yes \
+              -o UserKnownHostsFile=~/.ssh/known_hosts \
+              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+              'cd /opt/remerubio && docker compose ps'
+          
+          echo "✅ Verificación completada"
