@@ -36,15 +36,15 @@ jobs:
           fetch-depth: 0  # Obtener todo el historial para git fetch --all
 
       - name: 🚀 Ejecutar despliegue
-        working-directory: ${{ var.PROJECT_DIR }}
+        working-directory: ${{ vars.PROJECT_DIR }}
         run: |
           echo "Iniciando despliegue en el servidor local..."
           echo "Directorio de trabajo: $(pwd)"
-          echo "PROJECT_DIR: ${{ var.PROJECT_DIR }}"
+          echo "PROJECT_DIR: ${{ vars.PROJECT_DIR }}"
           
           # Validar que el directorio existe
-          if [ ! -d "${{ var.PROJECT_DIR }}" ]; then
-            echo "❌ Error: El directorio ${{ var.PROJECT_DIR }} no existe"
+          if [ ! -d "${{ vars.PROJECT_DIR }}" ]; then
+            echo "❌ Error: El directorio ${{ vars.PROJECT_DIR }} no existe"
             exit 1
           fi
           
@@ -58,7 +58,7 @@ jobs:
           echo "✅ Despliegue completado exitosamente"
 
       - name: 📊 Verificar estado del despliegue
-        working-directory: ${{ var.PROJECT_DIR }}
+        working-directory: ${{ vars.PROJECT_DIR }}
         run: |
           echo "Verificando estado de los contenedores..."
           echo "Directorio de trabajo: $(pwd)"
