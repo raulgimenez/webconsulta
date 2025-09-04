@@ -30,47 +30,12 @@ jobs:
     environment: prd  # Usa el environment 'prd' para protección adicional
     
     steps:
-      - name: 🔧 Configurar SSH
+      - name: 🚀 Despliegue local
         run: |
-          echo "Configurando conexión SSH..."
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          
-          # Añadir el host a known_hosts para evitar prompts interactivos
-          ssh-keyscan -t rsa,ed25519 "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
-          
-          echo "✅ Configuración SSH completada"
-
-      - name: 🚀 Ejecutar despliegue remoto
-        run: |
-          echo "Iniciando despliegue en el servidor remoto..."
-          echo "Servidor: ${{ secrets.DEPLOY_HOST }}"
-          echo "Usuario: ${{ secrets.DEPLOY_USER }}"
-          echo "PROJECT_DIR: ${{ vars.PROJECT_DIR }}"
-          
-          # Ejecutar actualización del código y despliegue en el servidor remoto
-          ssh -o StrictHostKeyChecking=yes \
-              -o UserKnownHostsFile=~/.ssh/known_hosts \
-              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              "cd ${{ vars.PROJECT_DIR }} && \
-               echo '[DEPLOY] Actualizando código desde el repositorio...' && \
-               echo '[DEPLOY] Obteniendo todos los cambios remotos...' && \
-               git fetch --all && \
-               echo '[DEPLOY] Reseteando a la rama main (descartando cambios locales)...' && \
-               git reset --hard origin/main && \
-               echo '[DEPLOY] Código actualizado correctamente' && \
-               chmod +x cicd/deploy.sh && \
-               bash cicd/deploy.sh"
-          
-          echo "✅ Despliegue completado exitosamente"
-
-      - name: 📊 Verificar estado del despliegue
-        run: |
-          echo "Verificando estado de los contenedores..."
-          ssh -o StrictHostKeyChecking=yes \
-              -o UserKnownHostsFile=~/.ssh/known_hosts \
-              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              "cd ${{ vars.PROJECT_DIR }} && docker compose ps"
-          
-          echo "✅ Verificación completada"      
+          export PROJECT_DIR={{vars.PROJECT_DIR}}
+          git config --global --add safe.directory "$PROJECT_DIR"
+          cd "$PROJECT_DIR"
+          export GIT_SSH_COMMAND='ssh -i /home/deploy/.ssh/id_ed25519 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/home/deploy/.ssh/known_hosts'
+          git fetch --all && git reset --hard origin/main
+          chmod +x cicd/deploy.sh
+          bash cicd/deploy.sh
