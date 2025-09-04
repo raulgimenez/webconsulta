@@ -25,19 +25,6 @@ echo "[DEPLOY] Cambiando al directorio del proyecto: $PROJECT_DIR"
 cd "$PROJECT_DIR"
 
 # =============================================================================
-# ACTUALIZACIÓN DEL CÓDIGO
-# =============================================================================
-
-echo "[DEPLOY] Actualizando código desde el repositorio..."
-echo "[DEPLOY] Obteniendo todos los cambios remotos..."
-git fetch --all
-
-echo "[DEPLOY] Reseteando a la rama main (descartando cambios locales)..."
-git reset --hard origin/main
-
-echo "[DEPLOY] Código actualizado correctamente"
-
-# =============================================================================
 # GESTIÓN DE CONTENEDORES DOCKER
 # =============================================================================
 
