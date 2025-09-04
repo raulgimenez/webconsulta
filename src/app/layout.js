@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
                   <div className="text-center md:text-right">
                     <p>Contacte: consulta@remerubio.com</p>
                     <p>Telèfon: +34 654 023 745</p>
-                    <p>Adreça: Carrer Santa Esperança, 3, 2n. Granollers</p>
+                    <p>Adreça: Carrer Santa Esperança, 3, 2n. Granollers (08401)</p>
                   </div>
                 </div>
               </div>
