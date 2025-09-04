@@ -1,21 +1,21 @@
 # =============================================================================
 # Pipeline de despliegue automático con GitHub Actions
 # =============================================================================
-# Esta pipeline se ejecuta automáticamente cuando se hace push a la rama main
-# y despliega la aplicación en el servidor de producción usando SSH.
+# Esta pipeline se ejecuta en el mismo host donde se despliega la aplicación,
+# por lo que puede ejecutar directamente el script de deploy sin necesidad de SSH.
 #
-# Secrets requeridos en GitHub:
-# - SSH_PRIVATE_KEY: Clave privada SSH para conectar al servidor
-# - DEPLOY_USER: Usuario SSH del servidor
-# - DEPLOY_HOST: Dirección IP o hostname del servidor
+# Configuración:
+# - Runner: self-hosted (ejecutándose en el servidor de producción)
+# - Trigger: Manual (workflow_dispatch) o automático en push a main
 # =============================================================================
 
 name: 🚀 Deploy to Production Server
 
 on:
+  # Descomenta para despliegue automático en push a main
   # push:
   #   branches: [ "main" ]
-  # Opcional: descomenta para permitir despliegue manual
+  # Despliegue manual desde la interfaz de GitHub
   workflow_dispatch:
 
 # Configuración de concurrencia para evitar despliegues simultáneos
@@ -30,39 +30,33 @@ jobs:
     environment: prd  # Usa el environment 'prd' para protección adicional
     
     steps:
-      - name: 🔧 Configurar SSH
+      - name: 🚀 Ejecutar despliegue
+        working-directory: ${{ env.APP_PATH }}
         run: |
-          echo "Configurando conexión SSH..."
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+          echo "Iniciando despliegue en el servidor local..."
+          echo "Directorio de trabajo: $(pwd)"
+          echo "APP_PATH: ${{ env.APP_PATH }}"
           
-          # Añadir el host a known_hosts para evitar prompts interactivos
-          ssh-keyscan -t rsa,ed25519 "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+          # Validar que el directorio existe
+          if [ ! -d "${{ env.APP_PATH }}" ]; then
+            echo "❌ Error: El directorio ${{ env.APP_PATH }} no existe"
+            exit 1
+          fi
           
-          echo "✅ Configuración SSH completada"
-
-      - name: 🚀 Ejecutar despliegue remoto
-        run: |
-          echo "Iniciando despliegue en el servidor..."
-          echo "Servidor: ${{ secrets.DEPLOY_HOST }}"
-          echo "Usuario: ${{ secrets.DEPLOY_USER }}"
+          # Hacer el script ejecutable si no lo es
+          chmod +x cicd/deploy.sh
           
-          # Ejecutar el script de despliegue en el servidor
-          # Nota: Removido 'sudo' ya que el script maneja permisos internamente
-          ssh -o StrictHostKeyChecking=yes \
-              -o UserKnownHostsFile=~/.ssh/known_hosts \
-              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              'export PROJECT_DIR=/opt/remerubio; bash /opt/remerubio/cicd/deploy.sh'
+          # Ejecutar el script de despliegue directamente
+          # El script ya maneja la actualización del código con git fetch/reset
+          bash cicd/deploy.sh
           
           echo "✅ Despliegue completado exitosamente"
 
       - name: 📊 Verificar estado del despliegue
+        working-directory: ${{ env.APP_PATH }}
         run: |
           echo "Verificando estado de los contenedores..."
-          ssh -o StrictHostKeyChecking=yes \
-              -o UserKnownHostsFile=~/.ssh/known_hosts \
-              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              'cd /opt/remerubio && docker compose ps'
+          echo "Directorio de trabajo: $(pwd)"
+          docker compose ps
           
           echo "✅ Verificación completada"
