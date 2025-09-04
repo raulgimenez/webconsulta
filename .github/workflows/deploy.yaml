@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: 🚀 Despliegue local
         run: |
-          export PROJECT_DIR={{vars.PROJECT_DIR}}
+          export PROJECT_DIR=${{ vars.PROJECT_DIR }}
           git config --global --add safe.directory "$PROJECT_DIR"
           cd "$PROJECT_DIR"
           export GIT_SSH_COMMAND='ssh -i /home/deploy/.ssh/id_ed25519 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/home/deploy/.ssh/known_hosts'
