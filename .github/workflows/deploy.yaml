@@ -47,13 +47,13 @@ jobs:
           echo "Iniciando despliegue en el servidor remoto..."
           echo "Servidor: ${{ secrets.DEPLOY_HOST }}"
           echo "Usuario: ${{ secrets.DEPLOY_USER }}"
-          echo "PROJECT_DIR: ${{ env.PROJECT_DIR }}"
+          echo "PROJECT_DIR: ${{ vars.PROJECT_DIR }}"
           
           # Ejecutar actualización del código y despliegue en el servidor remoto
           ssh -o StrictHostKeyChecking=yes \
               -o UserKnownHostsFile=~/.ssh/known_hosts \
               "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              "cd ${{ env.PROJECT_DIR }} && \
+              "cd ${{ vars.PROJECT_DIR }} && \
                echo '[DEPLOY] Actualizando código desde el repositorio...' && \
                echo '[DEPLOY] Obteniendo todos los cambios remotos...' && \
                git fetch --all && \
@@ -71,6 +71,6 @@ jobs:
           ssh -o StrictHostKeyChecking=yes \
               -o UserKnownHostsFile=~/.ssh/known_hosts \
               "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              "cd ${{ env.PROJECT_DIR }} && docker compose ps"
+              "cd ${{ vars.PROJECT_DIR }} && docker compose ps"
           
           echo "✅ Verificación completada"      
