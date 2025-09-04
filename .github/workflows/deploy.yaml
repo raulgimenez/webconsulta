@@ -13,8 +13,8 @@ name: 🚀 Deploy to Production Server
 
 on:
   # Descomenta para despliegue automático en push a main
-  # push:
-  #   branches: [ "main" ]
+  push:
+    branches: [ "main" ]
   # Despliegue manual desde la interfaz de GitHub
   workflow_dispatch:
 
