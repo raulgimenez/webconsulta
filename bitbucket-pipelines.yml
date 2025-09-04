@@ -1,0 +1,15 @@
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Deploy en servidor
+          script:
+            - pipe: atlassian/ssh-run:0.8.1
+              variables:
+                SSH_USER: $DEPLOY_USER
+                SERVER: $DEPLOY_HOST
+                SSH_KEY: $SSH_PRIVATE_KEY
+                MODE: "script"
+                COMMAND: "cicd/deploy.sh"
+                ENV_VARS: >-
+                  PROJECT_DIR=/opt/remerubio
