@@ -36,7 +36,8 @@ jobs:
           fetch-depth: 0  # Obtener todo el historial para git fetch --all
 
       - name: 🚀 Ejecutar despliegue
-        working-directory: ${{ vars.PROJECT_DIR }}
+        // directorio de trabajo deonde hemoss hecho el checkout en el paso eanterior
+        working-directory: ${{ github.workspace }}
         run: |
           echo "Iniciando despliegue en el servidor local..."
           echo "Directorio de trabajo: $(pwd)"
