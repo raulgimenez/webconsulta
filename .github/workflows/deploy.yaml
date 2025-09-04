@@ -30,16 +30,21 @@ jobs:
     environment: prd  # Usa el environment 'prd' para protección adicional
     
     steps:
+      - name: 📥 Checkout del código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Obtener todo el historial para git fetch --all
+
       - name: 🚀 Ejecutar despliegue
-        working-directory: ${{ env.APP_PATH }}
+        working-directory: ${{ env.PROJECT_DIR }}
         run: |
           echo "Iniciando despliegue en el servidor local..."
           echo "Directorio de trabajo: $(pwd)"
-          echo "APP_PATH: ${{ env.APP_PATH }}"
+          echo "PROJECT_DIR: ${{ env.PROJECT_DIR }}"
           
           # Validar que el directorio existe
-          if [ ! -d "${{ env.APP_PATH }}" ]; then
-            echo "❌ Error: El directorio ${{ env.APP_PATH }} no existe"
+          if [ ! -d "${{ env.PROJECT_DIR }}" ]; then
+            echo "❌ Error: El directorio ${{ env.PROJECT_DIR }} no existe"
             exit 1
           fi
           
@@ -53,7 +58,7 @@ jobs:
           echo "✅ Despliegue completado exitosamente"
 
       - name: 📊 Verificar estado del despliegue
-        working-directory: ${{ env.APP_PATH }}
+        working-directory: ${{ env.PROJECT_DIR }}
         run: |
           echo "Verificando estado de los contenedores..."
           echo "Directorio de trabajo: $(pwd)"
