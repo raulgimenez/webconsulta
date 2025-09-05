@@ -1,4 +1,4 @@
-se# 🌐 WebConsulta
+# 🌐 WebConsulta
 
 Aplicación web desarrollada con **Next.js** y estilizada con **TailwindCSS**.  
 El despliegue en producción está totalmente automatizado mediante **Docker Compose** y una **pipeline de GitHub Actions**.
