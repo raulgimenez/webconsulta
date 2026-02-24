@@ -89,3 +89,4 @@ jobs:
             echo "[DEPLOY] ejecutar script"
             chmod +x cicd/deploy.sh
             bash cicd/deploy.sh
+          '
