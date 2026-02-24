@@ -75,6 +75,7 @@ export default function ProfessionalsPage() {
             </h3>
             <ul className="space-y-3 text-gray-600">
               <li>Psicoterapeuta privada</li>
+              <li>Psicòloga a CDIAP Granollers</li> 
               <li>Psicoterapeuta a CAF (Intress)</li>
               <li>Tècnica psicòloga al Servei d'Adopcions Internacions (Intress)</li>
               <li>Directora centre d'acollida d'infants i adolescents (Intress 2017-2025)</li>
