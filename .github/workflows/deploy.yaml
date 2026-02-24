@@ -44,38 +44,15 @@ jobs:
             export HOME=/home/deploy
             PROJECT_DIR="${{ vars.PROJECT_DIR }}"
 
-            KEY="/home/deploy/.ssh/id_ed25519"
-            KNOWN="/home/deploy/.ssh/known_hosts"
-
             if [ -z "$PROJECT_DIR" ]; then
               echo "[DEPLOY] ERROR: PROJECT_DIR vacío"
               exit 1
             fi
 
-            if [ ! -f "$KEY" ]; then
-              echo "[DEPLOY] ERROR: no existe la clave $KEY"
-              exit 1
-            fi
-
-            # Base SSH options: no prompts, timeout corto, usa known_hosts
-            SSH_OPTS="-i $KEY -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$KNOWN -o ConnectTimeout=5"
-
-            echo "[DEPLOY] Preflight SSH: probando GitHub por 22..."
-            if timeout 8s ssh $SSH_OPTS -p 22 -T git@github.com >/dev/null 2>&1; then
-              echo "[DEPLOY] OK: GitHub SSH por 22"
-              export GIT_SSH_COMMAND="ssh $SSH_OPTS -p 22"
-            else
-              echo "[DEPLOY] 22 no disponible (o colgado). Probando GitHub SSH por 443..."
-              # Nota: en 443 el host es ssh.github.com
-              if timeout 8s ssh $SSH_OPTS -p 443 -T git@ssh.github.com >/dev/null 2>&1; then
-                echo "[DEPLOY] OK: GitHub SSH por 443 (ssh.github.com)"
-                export GIT_SSH_COMMAND="ssh $SSH_OPTS -p 443 -o HostName=ssh.github.com"
-              else
-                echo "[DEPLOY] ERROR: no puedo conectar a GitHub ni por 22 ni por 443"
-                echo "[DEPLOY] Sugerencia: revisar egress firewall / DNS / MTU / allowlist."
-                exit 1
-              fi
-            fi
+            # Forzar GitHub SSH por 443 (independiente de ~/.ssh/config)
+            KEY="/home/deploy/.ssh/id_ed25519"
+            KNOWN="/home/deploy/.ssh/known_hosts"
+            export GIT_SSH_COMMAND="ssh -i $KEY -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$KNOWN -o ConnectTimeout=8 -p 443 -o HostName=ssh.github.com"
 
             # Por si Git se queja de ownership “dubious”
             git config --global --add safe.directory "$PROJECT_DIR" || true
