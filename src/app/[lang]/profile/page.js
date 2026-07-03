@@ -1,0 +1,38 @@
+import ProfileContent from "@/components/ProfileContent";
+import { getDictionary, getCanonicalUrl } from "../dictionaries";
+
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
+  return {
+    title: dict.nav.profile,
+    description: dict.profile.metaDescription,
+    alternates: {
+      canonical: getCanonicalUrl('/trayectoria', lang),
+    },
+    openGraph: {
+      title: `${dict.nav.profile} | Reme Rubio`,
+      description: dict.profile.metaDescription,
+      url: getCanonicalUrl('/trayectoria', lang),
+      siteName: 'Reme Rubio',
+      type: 'profile',
+      locale: lang === 'ca' ? 'ca_ES' : lang === 'es' ? 'es_ES' : 'en_US',
+      images: [
+        {
+          url: '/images/og-trajectoria.png',
+          width: 1200,
+          height: 630,
+          alt: dict.profile.ogImageAlt,
+        },
+      ],
+    },
+  };
+}
+
+export default async function ProfessionalsPage({ params }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
+  return <ProfileContent profile={dict.profile} />;
+}

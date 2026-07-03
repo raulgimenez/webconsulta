@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "siteTitle": "Reme Rubio",
+    "siteDescription": "Psicología para todo el ciclo vital desde una mirada sistémica y psicoanalítica",
+    "keywords": ["psicología", "psicoterapia", "Reme Rubio", "consulta online", "consulta presencial", "Granollers", "Barcelona", "Vallès Oriental", "Vallès Occidental", "psicología online", "psicología presencial"],
+    "siteOgImageAlt": "Reme Rubio Psicología"
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "profile": "Trayectoria",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Reme Rubio",
+    "subtitle": "Psicología para todo el ciclo vital"
+  },
+  "home": {
+    "imageAlt": "Imagen de fondo de la consulta",
+    "titleLine1": "Psicología para todo el ciclo vital",
+    "titleLine2": "desde una mirada sistémica y psicoanalítica",
+    "intro": "La propuesta de acompañamiento psicológico que se ofrece consiste en buscar las raíces del malestar, analizando las situaciones vividas e invitando a profundizar para comprender por qué aparecen uno o varios síntomas, y así conseguir mejoras.",
+    "lifeStages": ["Embarazo", "Bebés", "Crianza", "Infancia", "Adolescencia", "Pareja", "Familia", "Adultez", "Envejecimiento"]
+  },
+  "services": {
+    "metaDescription": "Servicios de psicología y psicoterapia en Granollers y online.",
+    "ogImageAlt": "Espacio de terapia en Granollers",
+    "roomAlt1": "Sala de consulta 1",
+    "roomAlt2": "Sala de consulta 2",
+    "title": "Algunas de las situaciones tratadas en consulta pueden ser:",
+    "items": [
+      "Acompañamiento en la crianza de hijos/as desde el embarazo en adelante",
+      "Acompañamiento en el establecimiento de rutinas de alimentación, sueño y estimulación en bebés",
+      "Acompañamiento ante la conducta desafiante de los hijos/as",
+      "Acompañamiento en la adopción",
+      "Acompañamiento en el acogimiento",
+      "Acompañamiento ante situaciones de crisis personal y/o familiar",
+      "Acompañamiento en situaciones de duelo",
+      "Acompañamiento en divorcios y separaciones con o sin hijos/as a cargo",
+      "Acompañamiento a familias reconstituidas",
+      "Acompañamiento en procesos LGTBIQ+",
+      "Acompañamiento en diagnósticos de fibromialgia",
+      "Acompañamiento en adicciones",
+      "Acompañamiento ante sintomatología de TCA",
+      "Acompañamiento ante situaciones traumáticas",
+      "Acompañamiento a personas que han sufrido abuso sexual",
+      "Acompañamiento ante sintomatología de ansiedad",
+      "Acompañamiento ante sintomatología depresiva",
+      "Acompañamiento ante sintomatología fóbica",
+      "Acompañamiento ante sintomatología obsesiva",
+      "Supervisiones a profesionales de la Psicología",
+      "Supervisiones a profesionales de la Educación"
+    ]
+  },
+  "profile": {
+    "metaDescription": "Trayectoria profesional, formación y experiencia docente de Reme Rubio.",
+    "ogImageAlt": "Trayectoria profesional de Reme Rubio",
+    "imageAlt": "Reme Rubio",
+    "degree": "Doctora en Psicología de la Educación",
+    "license": "Número de colegiada en el COPC: 22624",
+    "sections": {
+      "education": "Formación",
+      "professional": "Experiencia profesional",
+      "teaching": "Experiencia docente"
+    },
+    "education": [
+      "Licenciada en Psicología (UAB 2007)",
+      "Máster Interuniversitario en Psicología de la Educación (UB 2009)",
+      "Habilitación sanitaria (COPC 2014)",
+      "Doctorado en Psicología de la Educación (UAB 2015)",
+      "Máster en \"Psicoterapia con niños y adolescentes en los ámbitos clínico y educativo\" (ECPNA e IL3-UB 2023)",
+      "Máster en \"Clínica Psicoanalítica con niños y adolescentes - Acreditación FEAP\" (ECPNA 2025)"
+    ],
+    "professional": [
+      "Psicoterapeuta privada",
+      "Psicóloga en CDIAP Granollers",
+      "Psicoterapeuta en CAF (Intress)",
+      "Técnica psicóloga en el Servicio de Adopciones Internacionales (Intress)",
+      "Directora de centro de acogida de niños/as y adolescentes (Intress 2017-2025)",
+      "Técnica psicóloga y coordinadora del Servicio Técnico Punto de Encuentro Ciudad 2 BCN (Intress 2012-2017)"
+    ],
+    "teachingIntro": "Profesora asociada en la Facultad de Psicología (UAB):",
+    "psychologyDegree": "Grado de Psicología:",
+    "teachingCourses": [
+      "\"Infancia y Familias en contextos de Dificultad\"",
+      "\"Psicología Evolutiva I y II\"",
+      "\"TFG\"",
+      "\"Prácticum\"",
+      "\"Psicología Cultural\""
+    ],
+    "teachingPrograms": [
+      "Máster de Intervención e Investigación Psicosocial (MURIP)",
+      "Máster Universitario en Psicología Jurídica y Forense"
+    ],
+    "teachingCollaborations": [
+      "Colaboradora en charlas del Consorcio de Educación de Barcelona",
+      "Colaboradora en la Facultad de Psicología (UOC 2011-2012)"
+    ]
+  },
+  "contact": {
+    "metaDescription": "Contacto con Reme Rubio Psicología para consulta online o presencial en Granollers.",
+    "ogImageAlt": "Reme Rubio Psicología Contacto",
+    "noWhatsapp": "No se atienden WhatsApps",
+    "onlineTitle": "Consulta online",
+    "onlineDescription": "Sesiones de psicología por videoconferencia, con la misma calidad y profesionalidad que en la consulta presencial.",
+    "inPersonTitle": "Consulta presencial",
+    "placeName": "\"Espai Calima\"",
+    "addressLine": "C/. Agustí Viñamata, 1-3, 2º 1ª",
+    "city": "Granollers"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contact": "Contacto:",
+    "phone": "Teléfono:",
+    "address": "Dirección:",
+    "addressValue": "C/. Agustí Viñamata, 1-3, 2º 1ª. Granollers (08401)"
+  },
+  "language": {
+    "catalan": "Català",
+    "spanish": "Español",
+    "english": "English"
+  }
+}

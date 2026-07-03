@@ -2,7 +2,7 @@ import React from "react"
 import { cn } from "@/lib/utils"
 
 export function MinimalistServicesList({ 
-  title = "Algunes de les situacions tractades a consulta poden ser:",
+  title,
   services,
   className 
 }) {
