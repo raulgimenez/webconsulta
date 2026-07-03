@@ -1,19 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
-    <loc>https://www.remerubio.com/</loc>
+    <loc>https://www.remerubio.com/ca</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/" />
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.remerubio.com/serveis</loc>
+    <loc>https://www.remerubio.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.remerubio.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/" />
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.remerubio.com/ca/serveis</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/serveis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/serveis" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.remerubio.com/profile</loc>
+    <loc>https://www.remerubio.com/es/servicios</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/serveis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/serveis" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.remerubio.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/serveis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/servicios" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/serveis" />
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.remerubio.com/ca/trajectoria</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/trajectoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/trayectoria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/background" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/trajectoria" />
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.remerubio.com/contacte</loc>
+    <loc>https://www.remerubio.com/es/trayectoria</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/trajectoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/trayectoria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/background" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/trajectoria" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remerubio.com/en/background</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/trajectoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/trayectoria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/background" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/trajectoria" />
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.remerubio.com/ca/contacte</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/contacte" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/contacte" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remerubio.com/es/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/contacte" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/contacte" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remerubio.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.remerubio.com/ca/contacte" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.remerubio.com/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.remerubio.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.remerubio.com/ca/contacte" />
     <priority>0.7</priority>
   </url>
 </urlset>

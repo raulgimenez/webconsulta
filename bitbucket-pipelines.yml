@@ -1,15 +1,10 @@
+# Bitbucket Pipelines is intentionally disabled for now.
+# Deployments are handled only from GitHub Actions.
+
 pipelines:
-  branches:
-    main:
+  custom:
+    disabled:
       - step:
-          name: Deploy en servidor
+          name: Bitbucket pipelines disabled
           script:
-            - pipe: atlassian/ssh-run:0.8.1
-              variables:
-                SSH_USER: $DEPLOY_USER
-                SERVER: $DEPLOY_HOST
-                SSH_KEY: $SSH_PRIVATE_KEY
-                MODE: "script"
-                COMMAND: "cicd/deploy.sh"
-                ENV_VARS: >-
-                  PROJECT_DIR=/opt/remerubio
+            - echo "Bitbucket Pipelines disabled. Deploy from GitHub Actions only."
