@@ -6,13 +6,14 @@ export async function generateMetadata({ params }) {
   const dict = await getDictionary(lang);
 
   return {
-    title: dict.nav.profile,
+    title: dict.profile.metaTitle,
     description: dict.profile.metaDescription,
+    keywords: dict.profile.keywords,
     alternates: {
       canonical: getCanonicalUrl('/trayectoria', lang),
     },
     openGraph: {
-      title: `${dict.nav.profile} | Reme Rubio`,
+      title: `${dict.profile.metaTitle} | Reme Rubio`,
       description: dict.profile.metaDescription,
       url: getCanonicalUrl('/trayectoria', lang),
       siteName: 'Reme Rubio',
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }) {
 export default async function TrayectoriaPage({ params }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
+  const contactHref = getCanonicalUrl('/contacto', lang).replace('https://www.remerubio.com', '');
 
-  return <ProfileContent profile={dict.profile} />;
+  return <ProfileContent profile={dict.profile} contactHref={contactHref} />;
 }

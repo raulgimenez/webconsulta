@@ -6,10 +6,10 @@ export async function generateMetadata({ params }) {
   const dict = await getDictionary(lang)
 
   return {
-    title: dict.nav.contact,
-    keywords: dict.meta.keywords,
+    title: dict.contact.metaTitle,
+    keywords: dict.contact.keywords,
     openGraph: {
-      title: `Reme Rubio | ${dict.nav.contact}`,
+      title: `${dict.contact.metaTitle} | Reme Rubio`,
       description: dict.contact.metaDescription,
       url: getCanonicalUrl('/contacto', lang),
       images: [
@@ -36,7 +36,7 @@ export default async function ContactPage({ params }) {
       <div className="max-w-3xl mx-auto">
         {/* Información de contacto principal */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-semibold text-gray-900 mb-8">Reme Rubio</h1>
+          <h1 className="text-4xl font-semibold text-gray-900 mb-8">{dict.contact.title}</h1>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-gray-600">
             <a
               href="mailto:consulta@remerubio.com"
@@ -93,18 +93,37 @@ export default async function ContactPage({ params }) {
           </div>
         </div>
 
+        <section className="mt-14 space-y-7 border-t border-gray-100 pt-14 text-gray-700">
+          <h2 className="text-2xl sm:text-3xl font-light text-gray-900 text-center">
+            {dict.contact.processTitle}
+          </h2>
+          <p className="text-lg leading-8">{dict.contact.processIntro}</p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {dict.contact.processSteps.map((step) => (
+              <div
+                key={step}
+                className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white px-4 py-4 text-base leading-6 shadow-sm"
+              >
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-verdigris" aria-hidden="true" />
+                <span>{step}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Mapa */}
         <div className="mt-12 rounded-2xl overflow-hidden shadow-lg">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.690760095178!2d2.28552947644843!3d41.60772648229847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c7e5c1db8fa9%3A0xb27494d36f2a6b3b!2sTeos%20Espai%20de%20Psicologia%20i%20Mindfulness!5e1!3m2!1ses!2ses!4v1748961596118!5m2!1ses!2ses"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full"
-        />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d283.65469772828493!2d2.289468731279671!3d41.608139435850724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1783514563332!5m2!1ses!2ses"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          />
+          
         </div>
       </div>
     </main>

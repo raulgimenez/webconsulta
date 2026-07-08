@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteTitle": "Reme Rubio",
-    "siteDescription": "Psychology for the entire life cycle from a systemic and psychoanalytic perspective",
+    "siteDescription": "Psychology for the entire life cycle from a psychoanalytic perspective",
     "keywords": ["psychology", "psychotherapy", "Reme Rubio", "online consultation", "in-person consultation", "Granollers", "Barcelona", "Vallès Oriental", "Vallès Occidental", "online psychology", "in-person psychology"],
     "siteOgImageAlt": "Reme Rubio Psychology"
   },
@@ -16,18 +16,94 @@
     "subtitle": "Psychology for the entire life cycle"
   },
   "home": {
+    "metaTitle": "Reme Rubio | Psychology for every stage of life",
+    "metaDescription": "Psychology that supports personal and family processes with a psychoanalytic perspective focused on emotional wellbeing and mental health.",
+    "keywords": ["Psychology", "psychoanalytic psychology", "Online psychology", "Emotional wellbeing", "Mental health"],
     "imageAlt": "Consultation room background image",
     "titleLine1": "Psychology for the entire life cycle",
-    "titleLine2": "from a systemic and psychoanalytic perspective",
+    "titleLine2": "from a psychoanalytic perspective",
     "intro": "The psychological support offered focuses on looking for the roots of distress, analysing lived situations, and inviting deeper understanding of why one or more symptoms appear, in order to achieve improvement.",
-    "lifeStages": ["Pregnancy", "Babies", "Parenting", "Children", "Adolescence", "Couples", "Family", "Adulthood", "Ageing"]
+    "lifeStages": ["Pregnancy", "Babies", "Parenting", "Children", "Adolescence", "Couples", "Family", "Adulthood", "Ageing"],
+    "seo": {
+      "servicesTitle": "Psychoanalytic psychology to support every stage of life",
+      "servicesIntro": "A psychology service that supports life processes from a psychoanalytic perspective, integrating online psychology, emotional wellbeing and mental health with close, respectful care throughout each stage.",
+      "complementaryServices": [
+        "Support during pregnancy and motherhood.",
+        "Psychological care for childhood.",
+        "Emotional support during adolescence.",
+        "Couples and family therapy.",
+        "Psychological support in adulthood."
+      ],
+      "servicesCta": "View services",
+      "benefitsTitle": "Benefits of emotional wellbeing in the therapeutic process",
+      "benefitsParagraphs": [
+        "Being accompanied in a psychology process helps understand distress, put words to what is happening and create sustained change. It supports emotional wellbeing, strengthens mental health and helps identify relational patterns that influence everyday family, professional and social life with greater personal balance.",
+        "Receiving psychological support makes it easier to face life stages with clarity, improves emotional management and promotes healthier relationships. Online psychology broadens access to the service, maintains continuity in the therapeutic process and supports steady care for personal mental health over time."
+      ],
+      "processTitle": "How online psychology works from the first contact",
+      "processParagraphs": [
+        "The first contact begins with a calm conversation where the request is heard. From there, a psychoanalytic perspective guides the process, defining goals, session format and the possibility of online psychology according to each person’s needs and life stage.",
+        "Once support has started, the process takes place within a structured frame with weekly visits. In the first visit, the therapeutic frame, how sessions work and how the work is sustained over time are explained."
+      ],
+      "faqTitle": "Frequently asked questions about online psychology",
+      "faqs": [
+        {
+          "question": "What can psychology bring to my daily life?",
+          "answer": "Psychology helps understand distress, organise emotions and find resources to face life situations. Through a therapeutic process, emotional wellbeing is built, mental health is cared for and relational patterns that influence personal, family and social life are explored within a clear therapeutic frame."
+        },
+        {
+          "question": "When is it advisable to start a psychological process?",
+          "answer": "Starting a psychology process is advisable when symptoms of emotional distress, relational difficulties or life changes appear. It is also useful for improving self-knowledge and mental health, even without a specific problem, supporting better emotional management and more balance in everyday life."
+        },
+        {
+          "question": "What is the first psychology session like?",
+          "answer": "The first psychology session is used to understand the request and the current life moment. It creates a space of trust where the reason for consultation is heard, questions are answered and the basis of the process is explained to support emotional wellbeing and mental health from the beginning."
+        },
+        {
+          "question": "Can online psychology offer the same continuity?",
+          "answer": "Online psychology makes it possible to maintain continuity in the therapeutic process with flexibility. It facilitates access when in-person sessions are not possible, keeping a stable working space focused on emotional wellbeing, regular sessions and long-term mental health care."
+        },
+        {
+          "question": "Which life stages can be addressed in therapy?",
+          "answer": "A psychology process can address life stages such as childhood, adolescence, adulthood or ageing. It also supports moments such as motherhood, relationships and family changes. A psychoanalytic perspective helps understand distress, bonds and personal history, promoting emotional wellbeing according to each person’s needs."
+        },
+        {
+          "question": "How long can a therapeutic process last?",
+          "answer": "The duration of a psychology process depends on the request, goals and life stage. They are often medium- or long-term processes, sustained through weekly visits and reviewed periodically. In the first visit, the therapeutic frame and the way the process is organised are explained."
+        }
+      ]
+    }
   },
   "services": {
-    "metaDescription": "Psychology and psychotherapy services in Granollers and online.",
+    "metaTitle": "Psychology services to support life processes",
+    "metaDescription": "Psychology services focused on understanding distress and caring for mental health through therapy suited to each life stage.",
+    "keywords": ["Psychology services", "Child psychotherapy", "Family psychology", "Psychoanalytic psychotherapy", "Individual therapy"],
     "ogImageAlt": "Therapy space in Granollers",
     "roomAlt1": "Consultation room 1",
     "roomAlt2": "Consultation room 2",
-    "title": "Some of the situations addressed in consultation may include:",
+    "title": "Psychology services, what situations can be worked on in therapy?",
+    "seo": {
+      "methodologyTitle": "Methodology based on psychoanalytic and relational psychotherapy",
+      "methodologyParagraphs": [
+        "The intervention is grounded in psychoanalytic psychotherapy, paying attention to the patient’s narrative, context and bonds. Therapeutic work makes it possible to understand the origin of distress, give meaning to lived experiences and generate progressive internal movement.",
+        "Family psychology and individual therapy take place within a structured therapeutic frame, with weekly visits and a frame explained in the first visit. The process supports spaces for listening, reflection and emotional elaboration with continuity."
+      ],
+      "benefitsTitle": "The impact of family psychology in the therapeutic process",
+      "benefitsIntro": "Therapeutic work, through family psychology and psychoanalytic psychotherapy, helps understand relational dynamics, place distress within its life context and open new ways of relating while caring for mental health with greater awareness.",
+      "benefits": [
+        "Understanding family roles that influence current distress.",
+        "Reducing repeated conflicts in close relationships.",
+        "Improving emotional communication with the environment.",
+        "Greater ability to set limits with personal confidence.",
+        "Integrating past experiences into the present moment."
+      ],
+      "consultationTypesTitle": "Types of consultations in individual and family therapy",
+      "consultationTypesParagraphs": [
+        "Consultations include in-person therapy and online psychology, addressing individual therapy, family psychology and child psychotherapy according to each life stage, availability and current emotional needs.",
+        "Sessions are developed from psychoanalytic psychotherapy, with ongoing listening spaces both in-person and online, maintaining confidentiality, regularity in the process and professional support suited to each situation."
+      ],
+      "contactCta": "Request an appointment"
+    },
     "items": [
       "Support with parenting from pregnancy onwards",
       "Support in establishing feeding, sleep and stimulation routines for babies",
@@ -53,9 +129,16 @@
     ]
   },
   "profile": {
-    "metaDescription": "Professional background, education and teaching experience of Reme Rubio.",
+    "metaTitle": "Psychotherapist with experience in mental health and education",
+    "metaDescription": "Psychotherapist with clinical and teaching experience supporting mental health processes through contemporary psychoanalytic psychotherapy.",
+    "keywords": ["Psychotherapist", "Mental health", "Psychoanalytic psychotherapy", "Doctor in psychology", "Psychotherapist"],
     "ogImageAlt": "Professional background of Reme Rubio",
     "imageAlt": "Reme Rubio",
+    "heroTitle": "Psychotherapist with a professional background in education and clinical work",
+    "heroIntro": "Doctor in educational psychology and psychotherapist with experience in mental health, working from psychoanalytic psychotherapy with a clinical, relational and rigorous perspective.",
+    "contactCta": "Contact now",
+    "valueTitle": "Value proposition from psychoanalytic psychotherapy",
+    "valueParagraph": "With a consolidated professional background, the value proposition is based on rigorous psychoanalytic psychotherapy and a relational clinical perspective. Her experience as a doctor in psychology brings depth, ethical judgement and the ability to support complex mental health processes with coherence, continuity and sensitivity at each life stage.",
     "degree": "Doctor in Educational Psychology",
     "license": "COPC membership number: 22624",
     "sections": {
@@ -98,15 +181,27 @@
     ]
   },
   "contact": {
-    "metaDescription": "Contact Reme Rubio Psychology for online or in-person consultation in Granollers.",
+    "metaTitle": "Private psychology consultation with direct and close contact",
+    "metaDescription": "Private psychology consultation for individual therapy and emotional support, with online psychology and in-person psychological consultation.",
+    "keywords": ["Private psychology consultation", "Individual therapy", "Online psychology consultation", "Emotional support", "In-person psychological consultation"],
     "ogImageAlt": "Reme Rubio Psychology Contact",
+    "title": "Private psychology consultation with Reme Rubio",
     "noWhatsapp": "WhatsApp messages are not answered",
-    "onlineTitle": "Online consultation",
+    "onlineTitle": "Online psychology consultation",
     "onlineDescription": "Psychology sessions by video call, offering the same quality and professionalism as in-person consultation.",
-    "inPersonTitle": "In-person consultation",
+    "inPersonTitle": "In-person psychological consultation",
     "placeName": "\"Espai Calima\"",
     "addressLine": "Carrer d'Agustí Viñamata 1-3, 2nd floor, 1st door",
-    "city": "Granollers"
+    "city": "Granollers",
+    "processTitle": "How private psychology consultation works step by step",
+    "processIntro": "Private psychology consultation begins with a close first contact, combining individual therapy, online psychology consultation and in-person psychological consultation to provide clear emotional support from the first therapeutic moment.",
+    "processSteps": [
+      "First contact by email or phone to explain the initial request.",
+      "Assessment of the most suitable consultation format, online or in person.",
+      "Scheduling of a first individual therapy session.",
+      "Explanation of the therapeutic frame and start of weekly visits.",
+      "Periodic review of the process according to goals and life stage."
+    ]
   },
   "footer": {
     "rights": "All rights reserved.",

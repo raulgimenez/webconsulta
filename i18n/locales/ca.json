@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteTitle": "Reme Rubio",
-    "siteDescription": "Psicologia per tot el cicle vital des de la mirada sistèmica i psicoanalítica",
+    "siteDescription": "Psicologia per tot el cicle vital des de la mirada psicoanalítica",
     "keywords": ["psicologia", "psicoteràpia", "Reme Rubio", "consulta online", "consulta presencial", "Granollers", "Barcelona", "Vallès Oriental", "Vallès Occidental", "psicologia online", "psicologia presencial"],
     "siteOgImageAlt": "Reme Rubio Psicologia"
   },
@@ -16,18 +16,94 @@
     "subtitle": "Psicologia per tot el cicle vital"
   },
   "home": {
+    "metaTitle": "Reme Rubio | Psicologia psicoanalítica per a totes les etapes",
+    "metaDescription": "Psicologia que acompanya processos personals i familiars amb una mirada psicoanalítica orientada al benestar emocional i la salut mental.",
+    "keywords": ["Psicologia", "psicologia psicoanalítica", "Psicologia online", "Benestar emocional", "Salut mental"],
     "imageAlt": "Imatge de fons de la consulta",
     "titleLine1": "Psicologia per tot el cicle vital",
-    "titleLine2": "des de la mirada sistèmica i psicoanalítica",
+    "titleLine2": "des de la mirada psicoanalítica",
     "intro": "La proposta d’acompanyament psicològic que s’ofereix consisteix en cercar les arrels del malestar, analitzant les situacions viscudes, i convidant a l’aprofundiment per a entendre per què apareixen un o varis símptomes, i així aconseguir millores.",
-    "lifeStages": ["Embaràs", "Nadons", "Criança", "Infants", "Adolescència", "Parella", "Família", "Adultesa", "Envelliment"]
+    "lifeStages": ["Embaràs", "Nadons", "Criança", "Infants", "Adolescència", "Parella", "Família", "Adultesa", "Envelliment"],
+    "seo": {
+      "servicesTitle": "Psicologia psicoanalítica per acompanyar cada etapa vital",
+      "servicesIntro": "Servei de psicologia que acompanya processos vitals des d’una mirada psicoanalítica, integrant psicologia online, benestar emocional i salut mental amb una atenció propera i respectuosa al llarg de les etapes.",
+      "complementaryServices": [
+        "Acompanyament en embaràs i maternitat.",
+        "Atenció psicològica a la infància.",
+        "Suport emocional en l’adolescència.",
+        "Teràpia de parella i familiar.",
+        "Acompanyament psicològic en l’adultesa."
+      ],
+      "servicesCta": "Veure els serveis",
+      "benefitsTitle": "Beneficis del benestar emocional en el procés terapèutic",
+      "benefitsParagraphs": [
+        "Acompanyar-se en un procés de psicologia permet entendre el malestar, posar paraules al que passa i generar canvis sostinguts. Afavoreix el benestar emocional, reforça la salut mental i ajuda a prendre consciència de patrons relacionals que influeixen en la vida quotidiana familiar professional i social amb més equilibri personal continu.",
+        "Rebre suport psicològic facilita afrontar etapes vitals amb més claredat, millora la gestió emocional i promou relacions més sanes. La psicologia online amplia l’accés al servei, mantenint la continuïtat del procés terapèutic i afavorint una implicació constant en la cura de la salut mental pròpia al llarg del temps personal."
+      ],
+      "processTitle": "Com funciona la psicologia online des del primer contacte",
+      "processParagraphs": [
+        "El primer contacte s’inicia amb una presa de contacte tranquil·la on s’escolta la demanda. Des d’aquí la mirada psicoanalítica orienta el procés, definint objectius, format de sessions i possibilitat de psicologia online segons necessitats i moment vital de cada persona.",
+        "Un cop iniciat l’acompanyament, el procés es desenvolupa dins d’un marc estructurat amb visites setmanals. A la primera visita s’explica l’enquadrament, el funcionament de les sessions i la manera de sostenir el treball terapèutic al llarg del temps."
+      ],
+      "faqTitle": "Preguntes freqüents sobre psicologia online",
+      "faqs": [
+        {
+          "question": "Què pot aportar la psicologia en el meu dia a dia?",
+          "answer": "La psicologia ajuda a comprendre el malestar, ordenar emocions i trobar recursos per afrontar situacions vitals. A través d’un procés terapèutic es construeix benestar emocional, es cuida la salut mental i es treballen patrons relacionals que influeixen en la vida personal, familiar i social, dins d’un marc d’acompanyament clar."
+        },
+        {
+          "question": "Quan és recomanable iniciar un procés psicològic?",
+          "answer": "Iniciar un procés de psicologia és recomanable quan apareixen símptomes de malestar emocional, dificultats relacionals o moments de canvi vital. També és útil quan es vol millorar l’autoconeixement i la salut mental, encara que no hi hagi una problemàtica concreta, afavorint una millor gestió emocional i més equilibri en la vida quotidiana personal i relacional."
+        },
+        {
+          "question": "Com és la primera sessió de psicologia?",
+          "answer": "La primera sessió de psicologia serveix per conèixer la demanda i el moment vital. Es crea un espai de confiança on s’escolta el motiu de consulta, es resolen dubtes i s’expliquen les bases del procés. Aquest primer contacte permet iniciar un acompanyament ajustat, cuidant el benestar emocional i la salut mental des del començament."
+        },
+        {
+          "question": "Es pot fer psicologia online amb la mateixa continuïtat?",
+          "answer": "La psicologia online permet mantenir la continuïtat del procés terapèutic amb flexibilitat. Facilita l’accés al servei quan la presencialitat no és possible, mantenint un espai de treball estable orientat al benestar emocional. Aquesta modalitat afavoreix la regularitat de les sessions i el seguiment del procés, cuidant la salut mental al llarg del temps."
+        },
+        {
+          "question": "Quines etapes vitals es poden treballar en teràpia?",
+          "answer": "El procés de psicologia pot abordar diferents etapes vitals com la infància, adolescència, adultesa o envelliment. També acompanya moments com la maternitat, la parella o els canvis familiars. La mirada psicoanalítica permet comprendre el malestar, els vincles i la història personal, afavorint el benestar emocional segons les necessitats presents."
+        },
+        {
+          "question": "Quant temps pot durar un procés terapèutic?",
+          "answer": "La durada d’un procés de psicologia depèn de la demanda, els objectius i el moment vital. Sovint són processos de durada mitjana o llarga, sostinguts en visites setmanals i revisats de manera periòdica. A la primera visita s’explica l’enquadrament del treball terapèutic i la manera d’organitzar el procés."
+        }
+      ]
+    }
   },
   "services": {
-    "metaDescription": "Serveis de psicologia i psicoteràpia a Granollers i online.",
+    "metaTitle": "Serveis de psicologia per acompanyar processos vitals humans",
+    "metaDescription": "Serveis de psicologia orientats a comprendre el malestar i cuidar la salut mental amb teràpia adaptada a cada etapa vital de la vida actual.",
+    "keywords": ["Serveis de psicologia", "Psicoteràpia infantil", "Psicologia familiar", "Psicoteràpia psicoanalítica", "Teràpia individual"],
     "ogImageAlt": "Espai de teràpia a Granollers",
     "roomAlt1": "Sala de consulta 1",
     "roomAlt2": "Sala de consulta 2",
-    "title": "Algunes de les situacions tractades a consulta poden ser:",
+    "title": "Serveis de psicologia, quines situacions es poden treballar en teràpia?",
+    "seo": {
+      "methodologyTitle": "Metodologia basada en la psicoteràpia psicoanalítica i relacional",
+      "methodologyParagraphs": [
+        "La intervenció es fonamenta en la psicoteràpia psicoanalítica, posant atenció al relat del pacient, al seu context i als vincles. El treball terapèutic permet comprendre l’origen del malestar, donar sentit a les experiències viscudes i generar moviments interns progressius.",
+        "La psicologia familiar i la teràpia individual es desenvolupen dins d’un marc terapèutic estructurat, amb visites setmanals i un enquadrament explicat a la primera visita. El procés afavoreix espais d’escolta, reflexió i elaboració emocional amb continuïtat."
+      ],
+      "benefitsTitle": "Impacte de la psicologia familiar en el procés terapèutic",
+      "benefitsIntro": "El treball terapèutic, des de la psicologia familiar i la psicoteràpia psicoanalítica, facilita comprendre dinàmiques relacionals, situar el malestar dins del context vital i obrir noves maneres de vincular-se, cuidant la salut mental amb més consciència.",
+      "benefits": [
+        "Comprensió dels rols familiars que influeixen en el malestar actual.",
+        "Reducció de conflictes repetitius en relacions properes.",
+        "Millora en la comunicació emocional amb l’entorn.",
+        "Capacitat de posar límits amb més seguretat personal.",
+        "Integració d’experiències passades en el moment present."
+      ],
+      "consultationTypesTitle": "Tipus de consultes en teràpia individual i familiar",
+      "consultationTypesParagraphs": [
+        "Les consultes inclouen teràpia presencial i psicologia online, abordant teràpia individual, psicologia familiar i psicoteràpia infantil, segons cada etapa vital, disponibilitat horària i necessitats emocionals concretes actuals.",
+        "Les sessions es desenvolupen des d’una psicoteràpia psicoanalítica, amb espais d’escolta continuada, tant en consulta presencial com online, mantenint confidencialitat, regularitat del procés i acompanyament professional adaptat a cada situació."
+      ],
+      "contactCta": "Demana una cita"
+    },
     "items": [
       "Acompanyament en la criança de fills/es des de l'embaràs en endavant",
       "Acompanyament en l'establiment de rutines d'alimentació, son i estimulació en nadons",
@@ -53,9 +129,16 @@
     ]
   },
   "profile": {
-    "metaDescription": "Trajectòria professional, formació i experiència docent de Reme Rubio.",
+    "metaTitle": "Psicoterapeuta amb trajectòria en salut mental i educació humana",
+    "metaDescription": "Psicoterapeuta amb experiència clínica i docent que acompanya processos de salut mental des d’una psicoteràpia psicoanalítica actual.",
+    "keywords": ["Psicoterapeuta", "Salut mental", "Psicoteràpia psicoanalítica", "Doctora en psicologia", "Psicoterapeuta"],
     "ogImageAlt": "Trajectòria professional de Reme Rubio",
     "imageAlt": "Reme Rubio",
+    "heroTitle": "Psicoterapeuta amb trajectòria professional en educació i clínica",
+    "heroIntro": "Doctora en psicologia de l’educació, psicoterapeuta amb experiència en salut mental, treballa des de la psicoteràpia psicoanalítica amb una mirada clínica, relacional, rigorosa i professional.",
+    "contactCta": "Contacta ara",
+    "valueTitle": "Proposta de valor des de la psicoteràpia psicoanalítica",
+    "valueParagraph": "Amb una trajectòria consolidada, la proposta de valor es basa en una psicoteràpia psicoanalítica rigorosa i una mirada clínica relacional. L’experiència com a doctora en psicologia aporta profunditat, criteri ètic i capacitat d’acompanyar processos complexos de salut mental personal i familiar amb coherència, continuïtat i sensibilitat en cada etapa vital.",
     "degree": "Doctora en Psicologia de l'Educació",
     "license": "Número de col·legiada al COPC: 22624",
     "sections": {
@@ -98,15 +181,27 @@
     ]
   },
   "contact": {
-    "metaDescription": "Contacte amb Reme Rubio Psicologia per a consulta online o presencial a Granollers.",
+    "metaTitle": "Consulta privada psicologia amb contacte directe i atenció propera",
+    "metaDescription": "Consulta privada psicologia orientada a teràpia individual i acompanyament emocional amb consulta online psicologia i consulta psicològica presencial.",
+    "keywords": ["Consulta privada psicologia", "Teràpia individual", "Consulta online psicologia", "Acompanyament emocional", "Consulta psicològica presencial"],
     "ogImageAlt": "Reme Rubio Psicologia Contacte",
+    "title": "Consulta privada psicologia amb Reme Rubio",
     "noWhatsapp": "No s'atenen WhatsApps",
-    "onlineTitle": "Consulta online",
+    "onlineTitle": "Consulta online de psicologia",
     "onlineDescription": "Sessions de psicologia a través de videoconferència, oferint la mateixa qualitat i professionalitat que en consulta presencial.",
-    "inPersonTitle": "Consulta presencial",
+    "inPersonTitle": "Consulta psicològica presencial",
     "placeName": "\"Espai Calima\"",
     "addressLine": "Carrer d'Agustí Viñamata 1-3, 2on 1a",
-    "city": "Granollers"
+    "city": "Granollers",
+    "processTitle": "Funcionament de la consulta privada psicologia pas a pas",
+    "processIntro": "La consulta privada psicologia inicia amb un primer contacte proper, combinant teràpia individual, consulta online psicologia i consulta psicològica presencial, facilitant acompanyament emocional clar des del primer moment terapèutic actual.",
+    "processSteps": [
+      "Primer contacte per correu o telèfon per exposar la demanda inicial.",
+      "Valoració del tipus de consulta més adequada, online o presencial.",
+      "Assignació d’una primera sessió de teràpia individual.",
+      "Explicació de l’enquadrament terapèutic i inici de visites setmanals.",
+      "Revisió periòdica del procés segons objectius i moment vital."
+    ]
   },
   "footer": {
     "rights": "Tots els drets reservats.",
