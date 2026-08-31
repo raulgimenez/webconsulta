@@ -6,7 +6,7 @@ export default function ProfileContent({ profile, contactHref }) {
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="w-full max-w-md mx-auto space-y-8">
-          <div className="relative aspect-[4/5] w-full max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg sm:max-w-sm">
+          <div className="relative aspect-square w-48 mx-auto overflow-hidden rounded-lg shadow-lg sm:w-56">
             <Image
               src="/images/reme_foto_perfil.jpeg"
               alt={profile.imageAlt}
