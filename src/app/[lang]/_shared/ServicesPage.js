@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
       locale: lang === 'ca' ? 'ca_ES' : lang === 'es' ? 'es_ES' : 'en_US',
       images: [
         {
-          url: '/images/sala_2.png',
+          url: '/images/fondo_landing.png',
           width: 1200,
           height: 630,
           alt: dict.services.ogImageAlt,
@@ -40,26 +40,19 @@ export default async function ServicesPage({ params }) {
 
   return (
     <main className="pb-20">
-      <div className="mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto px-4">
-          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/sala_1.png"
-              alt={dict.services.roomAlt1}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/sala_2.png"
-              alt={dict.services.roomAlt2}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+      <div className="mb-12 px-4">
+        <div
+          role="img"
+          aria-label={dict.services.imageAlt}
+          className="relative w-full max-w-6xl mx-auto h-[40vh] sm:h-[55vh] lg:h-[65vh] overflow-hidden rounded-[40px] bg-[#E8EDE7]"
+        >
+          <Image
+            src="/images/fondo_landing.png"
+            alt={dict.services.imageAlt}
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
       <div className="mt-6">
