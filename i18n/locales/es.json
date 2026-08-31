@@ -1,8 +1,8 @@
 {
   "meta": {
     "siteTitle": "Reme Rubio",
-    "siteDescription": "Psicología para todo el ciclo vital desde una mirada psicoanalítica",
-    "keywords": ["psicología", "psicoterapia", "Reme Rubio", "consulta online", "consulta presencial", "Granollers", "Barcelona", "Vallès Oriental", "Vallès Occidental", "psicología online", "psicología presencial"],
+    "siteDescription": "Psicología para todo el ciclo vital, desde una mirada psicoanalítica y sistémica",
+    "keywords": ["psicoterapia", "psicoterapia psicoanalítica", "psicoterapeuta", "Reme Rubio", "consulta de psicoterapia", "psicoterapia online", "psicoterapia presencial", "psicoterapia Granollers", "psicoterapia Barcelona", "salud mental", "psicología clínica"],
     "siteOgImageAlt": "Reme Rubio Psicología"
   },
   "nav": {
@@ -13,20 +13,20 @@
   },
   "header": {
     "title": "Reme Rubio",
-    "subtitle": "Psicología para todo el ciclo vital"
+    "subtitle": "Psicoterapia para todo el ciclo vital"
   },
   "home": {
-    "metaTitle": "Reme Rubio | Psicología para todas las etapas vitales",
-    "metaDescription": "Psicología que acompaña procesos personales y familiares con una mirada psicoanalítica orientada al bienestar emocional y la salud mental.",
-    "keywords": ["Psicología", "psicología psicoanalítica", "Psicología online", "Bienestar emocional", "Salud mental"],
+    "metaTitle": "Reme Rubio | Psicoterapia para todas las etapas vitales",
+    "metaDescription": "Psicoterapia que acompaña procesos personales y familiares con una mirada psicoanalítica orientada al bienestar emocional y la salud mental.",
+    "keywords": ["Psicoterapia", "psicoterapia psicoanalítica", "psicoterapia online", "proceso terapéutico", "terapia psicoanalítica", "bienestar emocional", "salud mental"],
     "imageAlt": "Imagen de fondo de la consulta",
-    "titleLine1": "Psicología para todo el ciclo vital",
-    "titleLine2": "desde una mirada psicoanalítica",
-    "intro": "La propuesta de acompañamiento psicológico que se ofrece consiste en buscar las raíces del malestar, analizando las situaciones vividas e invitando a profundizar para comprender por qué aparecen uno o varios síntomas, y así conseguir mejoras.",
+    "titleLine1": "Psicoterapia para todo el ciclo vital",
+    "titleLine2": "desde una mirada psicoanalítica y sistémica",
+    "intro": "La propuesta de acompañamiento psicológico que se ofrece consiste en buscar las raíces del malestar, analizando las situaciones vividas e invitando a profundizar para comprender para qué aparecen uno o varios síntomas, y así conseguir mejoras.",
     "lifeStages": ["Embarazo", "Bebés", "Crianza", "Infancia", "Adolescencia", "Pareja", "Familia", "Adultez", "Envejecimiento"],
     "seo": {
-      "servicesTitle": "Psicología psicoanalítica para acompañar cada etapa vital",
-      "servicesIntro": "Servicio de psicología que acompaña procesos vitales desde una mirada psicoanalítica, integrando psicología online, bienestar emocional y salud mental con una atención cercana y respetuosa a lo largo de las etapas.",
+      "servicesTitle": "Psicología psicoanalítica y sistémica para acompañar cada etapa vital",
+      "servicesIntro": "Servicio de psicoterapia que acompaña procesos vitales desde una mirada psicoanalítica y sistémica, promoviendo el bienestar emocional y la salud mental con una atención cercana y respetuosa a lo largo de las etapas.",
       "complementaryServices": [
         "Acompañamiento en embarazo y maternidad.",
         "Atención psicológica a la infancia.",
@@ -37,55 +37,54 @@
       "servicesCta": "Ver los servicios",
       "benefitsTitle": "Beneficios del bienestar emocional en el proceso terapéutico",
       "benefitsParagraphs": [
-        "Acompañarse en un proceso de psicología permite entender el malestar, poner palabras a lo que ocurre y generar cambios sostenidos. Favorece el bienestar emocional, refuerza la salud mental y ayuda a tomar conciencia de patrones relacionales que influyen en la vida cotidiana familiar, profesional y social con más equilibrio personal.",
-        "Recibir apoyo psicológico facilita afrontar etapas vitales con más claridad, mejora la gestión emocional y promueve relaciones más sanas. La psicología online amplía el acceso al servicio, mantiene la continuidad del proceso terapéutico y favorece una implicación constante en el cuidado de la propia salud mental a lo largo del tiempo."
+        "Acompañarse de un proceso de psicoterapia permite entender el malestar, poner palabras a lo que ocurre y generar cambios sostenidos. Favorece el bienestar emocional, refuerza la salud mental y ayuda a tomar conciencia de patrones relacionales que influyen en la vida cotidiana familiar, profesional y social con más equilibrio personal.",
+        "Recibir apoyo psicológico facilita afrontar etapas vitales con más claridad, mejora la gestión emocional y promueve relaciones más sanas."
       ],
-      "processTitle": "Cómo funciona la psicología online desde el primer contacto",
+      "processTitle": "Cómo funciona un proceso de psicoterapia",
       "processParagraphs": [
-        "El primer contacto se inicia con una toma de contacto tranquila donde se escucha la demanda. Desde ahí, la mirada psicoanalítica orienta el proceso, definiendo objetivos, formato de sesiones y posibilidad de psicología online según necesidades y momento vital de cada persona.",
-        "Una vez iniciado el acompañamiento, el proceso se desarrolla dentro de un marco estructurado con visitas semanales. En la primera visita se explica el encuadre, el funcionamiento de las sesiones y la manera de sostener el trabajo terapéutico a lo largo del tiempo."
+        "El primer contacto se inicia a través de la demanda. Desde ahí, la mirada psicoanalítica y sistémica orienta el proceso, definiendo objetivos y marcando un encuadre."
       ],
-      "faqTitle": "Preguntas frecuentes sobre psicología online",
+      "faqTitle": "Preguntas frecuentes sobre el proceso de psicoterapia",
       "faqs": [
         {
-          "question": "¿Qué puede aportar la psicología en mi día a día?",
-          "answer": "La psicología ayuda a comprender el malestar, ordenar emociones y encontrar recursos para afrontar situaciones vitales. A través de un proceso terapéutico se construye bienestar emocional, se cuida la salud mental y se trabajan patrones relacionales que influyen en la vida personal, familiar y social, dentro de un marco claro de acompañamiento."
+          "question": "¿Qué puede aportar la psicoterapia en mi día a día?",
+          "answer": "La psicoterapia ayuda a comprender el malestar, ordenar emociones y encontrar recursos para afrontar situaciones vitales. A través de un proceso terapéutico se construye bienestar emocional, se cuida la salud mental y se trabajan patrones relacionales que influyen en la vida personal, familiar y social."
         },
         {
-          "question": "¿Cuándo es recomendable iniciar un proceso psicológico?",
-          "answer": "Iniciar un proceso de psicología es recomendable cuando aparecen síntomas de malestar emocional, dificultades relacionales o momentos de cambio vital. También es útil cuando se quiere mejorar el autoconocimiento y la salud mental, aunque no haya una problemática concreta, favoreciendo una mejor gestión emocional y más equilibrio cotidiano."
+          "question": "¿Cuándo es recomendable iniciar un proceso de psicoterapia?",
+          "answer": "Iniciar un proceso de psicoterapia es recomendable cuando aparecen síntomas de malestar emocional, dificultades relacionales o momentos de cambio vital. También puede ser especialmente útil cuando una persona observa que determinadas situaciones, conflictos o patrones se repiten con frecuencia en su vida y no comprende por qué. Asimismo, la psicoterapia puede ayudar a mejorar el autoconocimiento y la salud mental aunque no exista una problemática concreta, favoreciendo una mejor gestión emocional y un mayor equilibrio cotidiano."
         },
         {
-          "question": "¿Cómo es la primera sesión de psicología?",
-          "answer": "La primera sesión de psicología sirve para conocer la demanda y el momento vital. Se crea un espacio de confianza donde se escucha el motivo de consulta, se resuelven dudas y se explican las bases del proceso para iniciar un acompañamiento ajustado al bienestar emocional y la salud mental."
+          "question": "¿Cómo es la primera sesión de psicoterapia?",
+          "answer": "La primera sesión de psicoterapia sirve para conocer la demanda y el momento vital. Se crea un espacio de confianza donde se escucha el motivo de consulta, se resuelven dudas y se sientan las bases del encuadre."
         },
         {
-          "question": "¿Se puede hacer psicología online con la misma continuidad?",
-          "answer": "La psicología online permite mantener la continuidad del proceso terapéutico con flexibilidad. Facilita el acceso al servicio cuando la presencialidad no es posible, manteniendo un espacio de trabajo estable orientado al bienestar emocional, la regularidad de las sesiones y el cuidado de la salud mental."
+          "question": "¿Se puede hacer un proceso de psicoterapia online con la misma continuidad?",
+          "answer": "La psicoterápia online permite mantener la continuidad del proceso terapéutico con flexibilidad. Facilita el acceso al servicio cuando la presencialidad no es posible, manteniendo un espacio de trabajo estable."
         },
         {
-          "question": "¿Qué etapas vitales se pueden trabajar en terapia?",
-          "answer": "El proceso de psicología puede abordar distintas etapas vitales como la infancia, adolescencia, adultez o envejecimiento. También acompaña momentos como la maternidad, la pareja o los cambios familiares. La mirada psicoanalítica permite comprender el malestar, los vínculos y la historia personal, favoreciendo el bienestar emocional."
+          "question": "¿Qué etapas vitales se pueden trabajar en psicoterapia?",
+          "answer": "El proceso de psicoterapia puede abordar distintas etapas vitales como la infancia, adolescencia, adultez o envejecimiento. También acompaña momentos como la maternidad, la pareja o los cambios familiares. La mirada psicoanalítica y sistémica permite comprender el malestar, los vínculos y la historia personal, favoreciendo el bienestar emocional."
         },
         {
           "question": "¿Cuánto tiempo puede durar un proceso terapéutico?",
-          "answer": "La duración de un proceso de psicología depende de la demanda, los objetivos y el momento vital. Suelen ser procesos de duración media o larga, sostenidos en visitas semanales y revisados periódicamente. En la primera visita se explica el encuadre del trabajo terapéutico y la manera de organizar el proceso."
+          "answer": "La duración de un proceso de psicoterapia depende de la demanda, los objetivos y el momento vital. Suelen ser procesos de duración media o larga, sostenidos en visitas semanales."
         }
       ]
     }
   },
   "services": {
-    "metaTitle": "Servicios de psicología para acompañar procesos vitales",
-    "metaDescription": "Servicios de psicología orientados a comprender el malestar y cuidar la salud mental con terapia adaptada a cada etapa vital actual.",
-    "keywords": ["Servicios de psicología", "Psicoterapia infantil", "Psicología familiar", "Psicoterapia psicoanalítica", "Terapia individual"],
+    "metaTitle": "Servicios de psicoterapia para acompañar procesos vitales",
+    "metaDescription": "Servicios de psicoterapia orientados a comprender el malestar y cuidar la salud mental con terapia adaptada a cada etapa vital actual.",
+    "keywords": ["Servicios de psicoterapia", "Psicoterapia psicoanalítica", "Psicoterapia infantil", "Psicoterapia familiar", "Terapia individual", "Proceso terapéutico", "Consulta de psicoterapia", "Psicología clínica"],
     "ogImageAlt": "Espacio de terapia en Granollers",
     "roomAlt1": "Sala de consulta 1",
     "roomAlt2": "Sala de consulta 2",
-    "title": "Servicios de psicología, ¿qué situaciones se pueden trabajar en terapia?",
+    "title": "¿Qué situaciones se pueden trabajar en psicoterapia?",
     "seo": {
-      "methodologyTitle": "Metodología basada en la psicoterapia psicoanalítica y relacional",
+      "methodologyTitle": "Metodología basada en la psicoterapia psicoanalítica y sistémica",
       "methodologyParagraphs": [
-        "La intervención se fundamenta en la psicoterapia psicoanalítica, poniendo atención al relato del paciente, a su contexto y a los vínculos. El trabajo terapéutico permite comprender el origen del malestar, dar sentido a las experiencias vividas y generar movimientos internos progresivos.",
+        "La intervención se fundamenta en la psicoterapia psicoanalítica y sistémica, poniendo atención al relato de la persona atendida, a su contexto y a los vínculos. El trabajo terapéutico permite comprender el origen del malestar, dar sentido a las experiencias vividas y generar movimientos internos progresivos.",
         "La psicología familiar y la terapia individual se desarrollan dentro de un marco terapéutico estructurado, con visitas semanales y un encuadre explicado en la primera visita. El proceso favorece espacios de escucha, reflexión y elaboración emocional con continuidad."
       ],
       "benefitsTitle": "Impacto de la psicología familiar en el proceso terapéutico",
@@ -100,7 +99,7 @@
       "consultationTypesTitle": "Tipos de consultas en terapia individual y familiar",
       "consultationTypesParagraphs": [
         "Las consultas incluyen terapia presencial y psicología online, abordando terapia individual, psicología familiar y psicoterapia infantil, según cada etapa vital, disponibilidad horaria y necesidades emocionales concretas actuales.",
-        "Las sesiones se desarrollan desde una psicoterapia psicoanalítica, con espacios de escucha continuada, tanto en consulta presencial como online, manteniendo confidencialidad, regularidad del proceso y acompañamiento profesional adaptado a cada situación."
+        "Las sesiones se desarrollan desde una psicoterapia psicoanalítica y sistémica, con espacios de escucha continuada, tanto en consulta presencial como online, manteniendo confidencialidad, regularidad del proceso y acompañamiento profesional adaptado a cada situación."
       ],
       "contactCta": "Pide una cita"
     },
@@ -131,15 +130,12 @@
   "profile": {
     "metaTitle": "Psicoterapeuta con trayectoria en salud mental y educación",
     "metaDescription": "Psicoterapeuta con experiencia clínica y docente que acompaña procesos de salud mental desde una psicoterapia psicoanalítica actual.",
-    "keywords": ["Psicoterapeuta", "Salud mental", "Psicoterapia psicoanalítica", "Doctora en psicología", "Psicoterapeuta sistémica"],
+    "keywords": ["Psicoterapeuta", "psicoterapia psicoanalítica", "trayectoria psicoterapeuta", "clínica psicoanalítica", "salud mental", "Doctora en psicología"],
     "ogImageAlt": "Trayectoria profesional de Reme Rubio",
     "imageAlt": "Reme Rubio",
     "heroTitle": "Psicoterapeuta con trayectoria profesional en educación y clínica",
-    "heroIntro": "Doctora en psicología de la educación, psicoterapeuta con experiencia en salud mental, trabaja desde la psicoterapia psicoanalítica con una mirada clínica, relacional y rigurosa.",
+    "heroIntro": "Doctora en psicología de la educación, psicoterapeuta con experiencia en salud mental, trabaja desde la psicoterapia psicoanalítica y sistémica.",
     "contactCta": "Contacta ahora",
-    "valueTitle": "Propuesta de valor desde la psicoterapia psicoanalítica",
-    "valueParagraph": "Con una trayectoria consolidada, la propuesta de valor se basa en una psicoterapia psicoanalítica rigurosa y una mirada clínica relacional. La experiencia como doctora en psicología aporta profundidad, criterio ético y capacidad de acompañar procesos complejos de salud mental con coherencia, continuidad y sensibilidad en cada etapa vital.",
-    "systemicContext": "Su formación inicial incorpora una base sistémica, integrada actualmente en una práctica clínica centrada en la psicoterapia psicoanalítica.",
     "degree": "Doctora en Psicología de la Educación",
     "license": "Número de colegiada en el COPC: 22624",
     "sections": {
@@ -159,7 +155,7 @@
       "Psicoterapeuta privada",
       "Psicóloga en CDIAP Granollers",
       "Psicoterapeuta en CAF (Intress)",
-      "Técnica psicóloga en el Servicio de Adopciones Internacionales (Intress)",
+      "Técnica psicóloga en el Servicio de Adopciones Internacionales (Intress 2016-2025)",
       "Directora de centro de acogida de niños/as y adolescentes (Intress 2017-2025)",
       "Técnica psicóloga y coordinadora del Servicio Técnico Punto de Encuentro Ciudad 2 BCN (Intress 2012-2017)"
     ],
@@ -184,14 +180,15 @@
   "contact": {
     "metaTitle": "Consulta privada de psicología con contacto directo y atención cercana",
     "metaDescription": "Consulta privada de psicología orientada a terapia individual y acompañamiento emocional con consulta online y consulta psicológica presencial.",
-    "keywords": ["Consulta privada psicología", "Terapia individual", "Consulta online psicología", "Acompañamiento emocional", "Consulta psicológica presencial"],
+    "keywords": ["Consulta privada de psicoterapia", "Psicoterapia online", "Psicoterapia presencial", "Consulta de psicoterapia en Granollers", "Terapia individual", "Acompañamiento emocional", "Psicoterapeuta"],
     "ogImageAlt": "Reme Rubio Psicología Contacto",
-    "title": "Consulta privada de psicología con Reme Rubio",
+    "title": "Consulta privada de psicoterapia con Reme Rubio",
     "noWhatsapp": "No se atienden WhatsApps",
-    "onlineTitle": "Consulta online de psicología",
-    "onlineDescription": "Sesiones de psicología por videoconferencia, con la misma calidad y profesionalidad que en la consulta presencial.",
-    "inPersonTitle": "Consulta psicológica presencial",
-    "placeName": "\"Espai Calima\"",
+    "onlineTitle": "Consulta online",
+    "onlineDescription": "Sesiones de psicología por videoconferencia, con la misma frecuencia que la consulta presencial.",
+    "inPersonTitle": "Consulta presencial",
+    "placeName": "Espai Calima",
+    "placeUrl": "https://espaicalima.com/",
     "addressLine": "C/. Agustí Viñamata, 1-3, 2º 1ª",
     "city": "Granollers",
     "processTitle": "Funcionamiento de la consulta privada de psicología paso a paso",

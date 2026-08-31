@@ -83,7 +83,14 @@ export default async function ContactPage({ params }) {
               <h2 className="text-xl font-semibold text-gray-900">{dict.contact.inPersonTitle}</h2>
             </div>
             <div className="space-y-2 text-gray-600">
-              <p className="font-medium">{dict.contact.placeName}</p>
+              <a
+                href={dict.contact.placeUrl}
+                className="font-medium text-gray-700 underline-offset-4 transition-colors hover:text-gray-900 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {dict.contact.placeName}
+              </a>
               <p>{dict.contact.addressLine}</p>
               <p>{dict.contact.city}</p>
             </div>

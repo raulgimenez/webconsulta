@@ -26,15 +26,6 @@ export default function ProfileContent({ profile, contactHref }) {
               {profile.contactCta}
             </DesignerCta>
           </div>
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              {profile.valueTitle}
-            </h2>
-            <p className="text-gray-600 leading-7">{profile.valueParagraph}</p>
-            <p className="border-l-2 border-verdigris/60 pl-4 text-sm leading-6 text-gray-500">
-              {profile.systemicContext}
-            </p>
-          </div>
         </div>
 
         <div className="space-y-8">
