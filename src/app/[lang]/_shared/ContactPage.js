@@ -83,7 +83,14 @@ export default async function ContactPage({ params }) {
               <h2 className="text-xl font-semibold text-gray-900">{dict.contact.inPersonTitle}</h2>
             </div>
             <div className="space-y-2 text-gray-600">
-              <p className="font-medium">{dict.contact.placeName}</p>
+              <a
+                href={dict.contact.placeUrl}
+                className="font-medium text-gray-700 underline-offset-4 transition-colors hover:text-gray-900 hover:underline focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {dict.contact.placeName}
+              </a>
               <p>{dict.contact.addressLine}</p>
               <p>{dict.contact.city}</p>
             </div>
@@ -104,23 +111,6 @@ export default async function ContactPage({ params }) {
           </iframe>
         </div>
 
-        <section className="mt-14 space-y-7 border-t border-gray-100 pt-14 text-gray-700">
-          <h2 className="text-2xl sm:text-3xl font-light text-gray-900 text-center">
-            {dict.contact.processTitle}
-          </h2>
-          <p className="text-lg leading-8">{dict.contact.processIntro}</p>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {dict.contact.processSteps.map((step) => (
-              <div
-                key={step}
-                className="flex items-start gap-3 rounded-lg border border-gray-200 bg-white px-4 py-4 text-base leading-6 shadow-sm"
-              >
-                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-verdigris" aria-hidden="true" />
-                <span>{step}</span>
-              </div>
-            ))}
-          </div>
-        </section>
       </div>
     </main>
   );

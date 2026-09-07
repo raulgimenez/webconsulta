@@ -6,12 +6,12 @@ export default function ProfileContent({ profile, contactHref }) {
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="w-full max-w-md mx-auto space-y-8">
-          <div className="relative aspect-[3/4] w-full">
+          <div className="relative aspect-square w-48 mx-auto overflow-hidden rounded-lg shadow-lg sm:w-56">
             <Image
-              src="/images/reme_low.jpg"
+              src="/images/reme_foto_perfil.jpeg"
               alt={profile.imageAlt}
               fill
-              className="object-cover rounded-lg shadow-lg"
+              className="object-cover object-center"
               priority
             />
           </div>
@@ -25,15 +25,6 @@ export default function ProfileContent({ profile, contactHref }) {
             <DesignerCta href={contactHref}>
               {profile.contactCta}
             </DesignerCta>
-          </div>
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              {profile.valueTitle}
-            </h2>
-            <p className="text-gray-600 leading-7">{profile.valueParagraph}</p>
-            <p className="border-l-2 border-verdigris/60 pl-4 text-sm leading-6 text-gray-500">
-              {profile.systemicContext}
-            </p>
           </div>
         </div>
 
