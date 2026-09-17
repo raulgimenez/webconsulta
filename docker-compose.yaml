@@ -1,11 +1,11 @@
 version: "3.3"
 
 services:
-  nextjs:
+  vite:
     build: .
     container_name: consulta-web
     ports:
-      - "3000:3000"
+      - "4173:4173"
     environment:
       - NODE_ENV=production
     restart: unless-stopped

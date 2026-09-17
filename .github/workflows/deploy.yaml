@@ -1,69 +1,40 @@
-# =============================================================================
-# Pipeline de despliegue automático con GitHub Actions
-# =============================================================================
-# Esta pipeline se ejecuta en el mismo host donde se despliega la aplicación,
-# por lo que puede ejecutar directamente el script de deploy sin necesidad de SSH.
-#
-# Configuración:
-# - Runner: self-hosted (ejecutándose en el servidor de producción)
-# - Trigger: Manual (workflow_dispatch) o automático en push a main
-# =============================================================================
+# Despliegue de Vite + Cloudflare Workers desde un runner administrado por GitHub.
 
-name: 🚀 Deploy to Production Server
+name: 🚀 Deploy to Cloudflare
 
 on:
-  # Descomenta para despliegue automático en push a main
   push:
-    branches: [ "main" ]
-  # Despliegue manual desde la interfaz de GitHub
+    branches: ["main"]
   workflow_dispatch:
 
-# Configuración de concurrencia para evitar despliegues simultáneos
 concurrency:
   group: deploy-production
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   deploy:
-    name: 🏗️ Deploy Application
-    runs-on: self-hosted
-    environment: prd  # Usa el environment 'prd' para protección adicional
+    name: 🏗️ Build and deploy
+    runs-on: ubuntu-latest
+    environment: prd
     
     steps:
-      - name: 👤 Comprobar usuario efectivo
-        run: |
-          whoami
-          id
-          sudo -u deploy -H bash -lc 'echo "Dentro de sudo -> $(whoami)"; id'
+      - name: 📥 Descargar código
+        uses: actions/checkout@v4
 
-      - name: 🚀 Despliegue local
-        run: |
-          sudo -u deploy -H bash -lc '
-            set -euo pipefail
+      - name: 🟢 Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
-            export HOME=/home/deploy
-            PROJECT_DIR="${{ vars.PROJECT_DIR }}"
+      - name: 📦 Instalar dependencias
+        run: npm ci
 
-            if [ -z "$PROJECT_DIR" ]; then
-              echo "[DEPLOY] ERROR: PROJECT_DIR vacío"
-              exit 1
-            fi
-
-            # Forzar GitHub SSH por 443 (independiente de ~/.ssh/config)
-            KEY="/home/deploy/.ssh/id_ed25519"
-            KNOWN="/home/deploy/.ssh/known_hosts"
-            export GIT_SSH_COMMAND="ssh -i $KEY -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$KNOWN -o ConnectTimeout=8 -p 443 -o HostName=ssh.github.com"
-
-            # Por si Git se queja de ownership “dubious”
-            git config --global --add safe.directory "$PROJECT_DIR" || true
-
-            cd "$PROJECT_DIR"
-
-            echo "[DEPLOY] git fetch/reset..."
-            git fetch --all --prune
-            git reset --hard origin/main
-
-            echo "[DEPLOY] ejecutar script"
-            chmod +x cicd/deploy.sh
-            bash cicd/deploy.sh
-          '
+      - name: 🚀 Desplegar
+        run: npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

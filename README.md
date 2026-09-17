@@ -1,112 +1,81 @@
-# 🌐 WebConsulta
+# WebConsulta
 
-Aplicación web desarrollada con **Next.js** y estilizada con **TailwindCSS**.  
-El despliegue en producción está totalmente automatizado mediante **Docker Compose** y una **pipeline de GitHub Actions**.
+Aplicación web React migrada a **Vite** y preparada para desplegar como **Cloudflare Worker** con assets estáticos servidos por Wrangler.
 
----
+## Stack
 
-## 🚀 Características principales
-- **Frontend en Next.js**: framework React moderno y optimizado.
-- **Docker Compose**: un único comando para levantar el proyecto en local o en producción.
-- **CI/CD Automatizado**: cada `git push` a la rama `main` activa una pipeline que actualiza la app en el servidor de producción en cuestión de segundos.
-- **Espacio de discusiones**: abierto en GitHub Discussions para propuestas de mejora, soporte y debate sobre problemas.
+- React 19
+- Vite
+- TailwindCSS
+- Cloudflare Workers + Wrangler
 
----
+## Desarrollo local
 
-## 🛠️ Levantar la aplicación en local para desarrollo
-
-### 1. Clonar el repositorio
-```bash
-git clone git@github.com:raulgimenez/webconsulta.git
-cd webconsulta
-```
-
-### 2. Instalar dependencias (modo desarrollo)
-Si quieres trabajar directamente con Next.js sin Docker:
 ```bash
 npm install
 npm run dev
 ```
-Esto abrirá la app en `http://localhost:3000`.
 
-### 3. Usar Docker Compose (recomendado)
-Si prefieres trabajar con el mismo entorno que en producción:
+Vite abrirá la app normalmente en `http://localhost:5173`.
+
+Para probar el Worker local con los assets de producción:
+
 ```bash
-docker compose up --build
+npm run build
+npm run cf:dev
 ```
 
-La app quedará accesible en:  
-👉 [http://localhost:3000](http://localhost:3000)
+Wrangler servirá el Worker normalmente en `http://localhost:8787`.
 
-Para detener los contenedores:
+## Validación
+
 ```bash
-docker compose down
+npm run lint
+npm test
+npm run build
 ```
 
----
+## Despliegue
 
-## 📦 Despliegue en producción
+Antes de desplegar, autentica Wrangler o configura `CLOUDFLARE_API_TOKEN` en el entorno.
 
-- La rama `main` está vinculada a una **pipeline de GitHub Actions**.
-- Cuando haces `git push` a `main`:
-  1. La pipeline conecta con el servidor de producción.
-  2. Ejecuta `git fetch/reset` para actualizar el código.
-  3. Corre `docker compose down && docker compose up -d --build`.
-  4. En segundos, los cambios están en producción.
-
-⚠️ **Importante**:  
-No hagas commits directos en `main`.  
-Lo recomendable es trabajar en ramas de feature/fix y abrir un **Pull Request**.
-
----
-
-## 💬 Colaboración y soporte
-
-- Hemos habilitado un espacio de **[GitHub Discussions](../../discussions)** para:
-  - Reportar problemas.
-  - Proponer mejoras.
-  - Resolver dudas técnicas.
-  - Debatir sobre el roadmap del proyecto.
-
-### Normas básicas
-- Usa títulos claros y descripciones detalladas.
-- Para errores, especifica pasos para reproducir.
-- Para ideas, explica el valor añadido.
-
----
-
-## 👥 Cómo colaborar
-
-1. Haz un **fork** del repo.
-2. Crea una rama de feature:
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. Haz commit y push a tu fork.
-4. Abre un **Pull Request** hacia `main`.
-
----
-
-## ⚙️ Requisitos previos
-
-- Node.js >= 18
-- Docker y Docker Compose (para entorno idéntico a producción)
-- Git
-
----
-
-## 🔄 Flujo de despliegue (CI/CD)
-
-```mermaid
-flowchart LR
-    A[👩‍💻 Colaborador] -->|push a main| B[GitHub Actions]
-    B -->|ejecuta pipeline| C[Servidor Producción]
-    C -->|docker compose up| D[Aplicación en producción]
+```bash
+npm run deploy
 ```
 
----
+El comando ejecuta `vite build` y después `wrangler deploy` usando `wrangler.jsonc`.
 
-## 📜 Licencia
+### Despliegue automático con GitHub Actions
 
-Este proyecto se distribuye bajo la licencia MIT.  
-Consulta el archivo [LICENSE](LICENSE) para más información.
+El workflow `.github/workflows/deploy.yaml` despliega automáticamente cada cambio enviado a `main`. También se puede ejecutar manualmente desde la pestaña **Actions** de GitHub.
+
+GitHub Actions utiliza un runner temporal de GitHub; no es necesario mantener una máquina externa ni un runner `self-hosted`.
+
+En el environment `prd` de GitHub, configura estos secretos:
+
+```text
+CLOUDFLARE_API_TOKEN
+CLOUDFLARE_ACCOUNT_ID
+```
+
+`CLOUDFLARE_API_TOKEN` debe ser un token creado en [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens), con permisos para desplegar Workers (`Workers Scripts: Edit`) y limitado a la cuenta correspondiente.
+
+El `CLOUDFLARE_ACCOUNT_ID` de este proyecto es:
+
+```text
+d6f2de6988c3bf99ef0f866ebc9ea364
+```
+
+No guardes tokens en el repositorio ni publiques el contenido de la configuración local de Wrangler. Para comprobar la cuenta local autenticada:
+
+```bash
+npx wrangler whoami
+```
+
+## Internacionalización
+
+Los textos están en `i18n/locales/*.json`. Las rutas localizadas se resuelven en `src/lib/i18n-config.js` y `src/lib/routes.js`.
+
+## Licencia
+
+MIT. Consulta [LICENSE](LICENSE).
